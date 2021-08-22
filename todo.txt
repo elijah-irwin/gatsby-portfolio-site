@@ -1,0 +1,6 @@
+Things to learn/add myself to the site:
+
+- React Helmet: Add metadata to pages, etc.
+- Manifest file/plugin
+- Sitemap
+
