@@ -40,12 +40,12 @@ const Body = styled.main`
 
 const Toggle = styled.div`
   position: absolute;
-  top: 30px;
-  right: 200px;
+  top: 20px;
+  right: 35px;
   color: ${props => props.theme.color1};
 
   & svg { 
-    width: 35px; 
-    height: 35px;
+    width: 50px; 
+    height: 50px;
   }
 `;

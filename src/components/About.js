@@ -7,7 +7,7 @@ const About = () => {
     <Wrap>
       <TextContent>
         <Header>.about</Header>
-        <P>A <Span>developer</Span> and <Fancy>(on occasion)</Fancy> <Span>designer</Span> passionate about simplifying development flows. You can usually find me busy refactoring something.</P>
+        <P>A <Span>developer</Span> and <Fancy>(on occasion)</Fancy> <Span>designer</Span> passionate about simplifying development workflows. You can usually find me busy refactoring something.</P>
         <P>Currently working at <Span>TD Securities</Span> as a <Span>Technical Lead</Span> developing tools to simplify the creation of new apps.</P>
       </TextContent>
       <DownArrow><ArrowDownCircle /></DownArrow>
