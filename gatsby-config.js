@@ -3,5 +3,15 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "Gatsby Portfolio Site",
   },
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: [
+    "gatsby-plugin-styled-components",
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Nunito Sans:300,400,600,700', 'Caveat:400,500,600']
+        }
+      }
+    }
+  ],
 };

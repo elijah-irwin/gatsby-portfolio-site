@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+  :root {
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: ${props => props.theme.text.color}
+  }
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -20,29 +26,26 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    color: ${props => props.theme.color}
   }
-  /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, menu, nav, section {
-    display: block;
-  }
+
   body {
-    line-height: 1;
+    background: ${props => props.theme.main.bgColor}
   }
+
+  body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: ${props => props.theme.main.bgColor}
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.sidenav.bgColor};
+    border-radius: 5px;
+  }
+
   ol, ul {
     list-style: none;
-  }
-  blockquote, q {
-    quotes: none;
-  }
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: '';
-    content: none;
-  }
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
   }
 `;

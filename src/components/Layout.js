@@ -1,9 +1,13 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import { ToggleLeft, ToggleRight } from 'react-feather';
 
 // Styles
 import { GlobalStyles } from '../theme/globalStyles';
 import { dark, light } from '../theme/themes';
+
+// Components
+import SideNav from './SideNav';
 
 // State
 import { AppContext } from '../contexts/AppContext';
@@ -15,10 +19,33 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={darkTheme ? dark : light}>
       <GlobalStyles />
-      <button onClick={toggleTheme}>swap theme</button>
-      {children}
+
+      <SideNav />
+
+      <Body>
+        <Toggle onClick={toggleTheme}>{darkTheme ? <ToggleRight /> : <ToggleLeft />}</Toggle>
+        {children}
+      </Body>
     </ThemeProvider>
   );
 };
 
 export default Layout;
+
+const Body = styled.main`
+  margin-left: 10rem;
+  padding: 0px 200px;
+  background-color: ${props => props.theme.main.bgColor};
+`;
+
+const Toggle = styled.div`
+  position: absolute;
+  top: 30px;
+  right: 200px;
+  color: ${props => props.theme.color1};
+
+  & svg { 
+    width: 35px; 
+    height: 35px;
+  }
+`;
