@@ -1,12 +1,9 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
 // Components
-import About from '../components/About';
+import Layout from '../components/Layout/Layout';
+import About from '../components/About/About';
 
-
-// Components
-import Layout from '../components/Layout';
 
 const Landing = () => {
   return (

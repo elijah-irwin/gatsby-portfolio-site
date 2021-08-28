@@ -2,6 +2,7 @@ export const dark = {
   color: 'purple',
 
   color1: '#6E6CD7',
+  white: 'whitesmoke',
 
   headshotBorder: '#232529',
   buttonText: '#E1E1E1',
@@ -9,22 +10,23 @@ export const dark = {
   text: {
     color: '#949494',
     header: 'whitesmoke',
-    accent: '#6E6CD7'
+    accent: '#6E6CD7',
   },
 
   sidenav: {
-    bgColor: '#6E6CD7'
+    bgColor: '#6E6CD7',
   },
 
   main: {
-    bgColor: '#282A2F'
-  }
+    bgColor: '#282A2F',
+  },
 };
 
 export const light = {
   color: 'yellow',
 
   color1: '#6E6CD7',
+  white: 'whitesmoke',
 
   headshotBorder: '#DEDFE1',
   buttonText: '#E1E1E1',
@@ -32,14 +34,14 @@ export const light = {
   text: {
     color: '#373737',
     header: '#373737',
-    accent: '#6E6CD7'
+    accent: '#6E6CD7',
   },
 
   sidenav: {
-    bgColor: '#6E6CD7'
+    bgColor: '#6E6CD7',
   },
 
   main: {
-    bgColor: '#DEDFE1'
-  }
+    bgColor: '#DEDFE1',
+  },
 };
