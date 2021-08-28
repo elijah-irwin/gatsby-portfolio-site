@@ -19,7 +19,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h2`
-  font-size: 4rem;
+  font-size: 3.3rem;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 10px;
