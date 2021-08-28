@@ -2,15 +2,23 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { ArrowDownCircle } from 'react-feather';
 
+import Headshot from './Headshot';
+
 const About = () => {
   return (
     <Wrap>
-      <TextContent>
+
+      <Text>
         <Header>.about</Header>
         <P>A <Span>developer</Span> and <Fancy>(on occasion)</Fancy> <Span>designer</Span> passionate about simplifying development workflows. You can usually find me busy refactoring something.</P>
         <P>Currently working at <Span>TD Securities</Span> as a <Span>Technical Lead</Span> developing tools to simplify the creation of new apps.</P>
-      </TextContent>
-      <DownArrow><ArrowDownCircle /></DownArrow>
+      </Text>
+
+      <Headshot />
+
+      <Bottom>
+        <ArrowDownCircle />
+      </Bottom>
     </Wrap>
   );
 };
@@ -18,14 +26,11 @@ const About = () => {
 export default About;
 
 const Wrap = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
-
-const TextContent = styled.div`
-  max-width: 54%;
-  margin-top: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: center;
 `;
 
 const Header = styled.h2`
@@ -36,8 +41,11 @@ const Header = styled.h2`
   color: ${props => props.theme.text.header};
 `;
 
+const Text = styled.div`
+`;
+
 const P = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: 400;
 `;
@@ -57,12 +65,11 @@ const bounce = keyframes`
   100% { transform: translateY(0px); }
 `;
 
-const DownArrow = styled.div`
+const Bottom = styled.div`
   color: ${props => props.theme.text.accent};
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  padding-bottom: 40px;
+  position: absolute;
+  bottom: 40px;
+  left: 52%;
   animation: ${bounce} 2s ease-in-out infinite;
 
   & svg {

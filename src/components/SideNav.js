@@ -65,6 +65,7 @@ const Socials = styled.div`
   & svg {
     height: 25px;
     width: 25px;
+    cursor: pointer;
 
     &:first-child {
       margin-right: 20px;

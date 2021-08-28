@@ -28,6 +28,15 @@ export const GlobalStyles = createGlobalStyle`
     vertical-align: baseline;
   }
 
+  button {
+    font-family: 'Nunito Sans', sans-serif;
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   body {
     background: ${props => props.theme.main.bgColor}
   }
