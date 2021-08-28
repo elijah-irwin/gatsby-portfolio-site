@@ -22,7 +22,7 @@ export const Header = styled.h2`
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin-bottom: 10px;
   color: ${props => props.theme.text.header};
 `;
 
