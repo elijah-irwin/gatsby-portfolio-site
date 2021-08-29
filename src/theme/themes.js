@@ -4,6 +4,8 @@ export const dark = {
   color1: '#6E6CD7',
   white: 'whitesmoke',
 
+  x: 'whitesmoke',
+
   headshotBorder: '#232529',
   buttonText: '#E1E1E1',
 
@@ -27,6 +29,8 @@ export const light = {
 
   color1: '#6E6CD7',
   white: 'whitesmoke',
+
+  x: 'whitesmoke',
 
   headshotBorder: '#DEDFE1',
   buttonText: '#E1E1E1',
