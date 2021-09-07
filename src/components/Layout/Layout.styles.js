@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { breaks } from '../../theme/breakPoints';
 
 export const Body = styled.main`
-  background-color: ${props => props.theme.main.bgColor};
   padding: 0px 20px;
 
   @media ${breaks.tablet} {
@@ -20,9 +19,9 @@ export const ThemeToggle = styled.div`
 
   @media ${breaks.tablet} {
     display: block;
-    position: absolute;
-    top: 15px;
-    right: 25px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
     color: ${props => props.theme.color1};
 
     & svg {

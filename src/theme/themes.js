@@ -22,6 +22,8 @@ export const dark = {
   main: {
     bgColor: '#282A2F',
   },
+
+  shadow: '0px 2px 6px rgba(0, 0, 0, 0.4)',
 };
 
 export const light = {
@@ -48,4 +50,6 @@ export const light = {
   main: {
     bgColor: '#DEDFE1',
   },
+
+  shadow: '0px 2px 6px rgba(0, 0, 0, 0.25)',
 };

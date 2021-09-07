@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
-    color: ${(props) => props.theme.text.color}
+    color: ${props => props.theme.text.color};
   }
 
   html, body, div, span, applet, object, iframe,
@@ -38,7 +38,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.main.bgColor};
+    background: ${props => props.theme.main.bgColor};
     max-width: 100vw;
   }
 
@@ -47,11 +47,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body::-webkit-scrollbar-track {
-    background: ${(props) => props.theme.main.bgColor}
+    background: ${props => props.theme.main.bgColor};
   }
 
   body::-webkit-scrollbar-thumb {
-    background: ${(props) => props.theme.sidenav.bgColor};
+    background: ${props => props.theme.sidenav.bgColor};
     border-radius: 5px;
   }
 

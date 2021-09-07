@@ -9,8 +9,14 @@ export const Wrapper = styled.div`
   align-items: center;
 
   @media ${breaks.tablet} {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    grid-template-rows: 1fr 5fr 1fr;
   }
+`;
+
+export const Middle = styled.div`
+  display: grid;
 
   @media ${breaks.laptop} {
     grid-template-columns: 1.5fr 1fr;
@@ -18,12 +24,10 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Header = styled.h2`
-  font-size: 3.3rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  color: ${props => props.theme.text.header};
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const MagicHeadshot = styled(Headshot)`
@@ -56,18 +60,19 @@ const bounce = keyframes`
 `;
 
 export const Bottom = styled.div`
-  color: ${props => props.theme.text.accent};
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  animation: ${bounce} 2s ease-in-out infinite;
-
-  & svg {
-    height: 40px;
-    width: 40px;
-  }
+  display: none;
 
   @media ${breaks.tablet} {
-    left: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${props => props.theme.text.accent};
+    animation: ${bounce} 2s ease-in-out infinite;
+
+    & svg {
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
   }
 `;

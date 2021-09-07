@@ -21,7 +21,7 @@ const Headshot = ({ className }) => {
         src='../../assets/head-shot.jpg'
         alt='head shot'
         className={darkTheme ? 'dark' : 'light'}
-        width={275}
+        width={270}
         quality={100}
       />
       <BigButton>Message Me</BigButton>

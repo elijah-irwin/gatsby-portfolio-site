@@ -1,3 +1,7 @@
+.smooth {
+  transition: all 0.4s ease-in;
+}
+
 .dark {
   border-radius: 50%;
   border: 20px solid #232529;

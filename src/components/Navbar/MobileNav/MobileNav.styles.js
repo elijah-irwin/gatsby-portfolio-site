@@ -53,7 +53,7 @@ export const ThemeToggle = styled.div`
 export const Drawer = styled.div`
   position: fixed;
   top: 0;
-  left: ${p => (p.open ? 0 : '-100%')};
+  left: ${p => (p.open ? 0 : '-105%')};
   height: 100vh;
   width: 100vw;
   display: flex;
