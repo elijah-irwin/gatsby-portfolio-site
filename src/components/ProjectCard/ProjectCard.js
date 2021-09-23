@@ -25,7 +25,7 @@ const ProjectCard = ({ project }) => {
       <Desc>{project.description}</Desc>
       <Chips>
         {project.tags.map(tag => (
-          <Chip key={tag.name}>{tag}</Chip>
+          <Chip key={tag}>{tag}</Chip>
         ))}
       </Chips>
     </Wrapper>
