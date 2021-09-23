@@ -24,7 +24,7 @@ export const projects = {
   eComm: {
     title: 'My Mechs',
     description:
-      'A mock e-commerce site build from scratch as a learning project. Contains searching, pagination, and checkout flows via PayPal API integration!',
+      'A mock e-commerce site build from scratch as a learning project. Contains searching, pagination, and checkout with PayPal integration.',
     github: null,
     demo: null,
     bgImage: rMr,

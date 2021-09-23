@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  min-height: 300px;
+  min-height: 275px;
   border-radius: 20px;
   box-shadow: ${p => p.theme.shadow};
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${p => p.bgImage}) center no-repeat;
   background-size: cover;
-  padding: 20px;
+  padding: 15px 20px;
   color: ${p => p.theme.white};
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 export const Top = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 
   & h3 {
     font-size: 1.5rem;
@@ -54,8 +54,8 @@ export const Chips = styled.div`
 `;
 
 export const Chip = styled.div`
-  padding: 5px 10px;
-  font-weight: 700;
+  padding: 5px 12px;
+  font-weight: 600;
   border-radius: 7px;
   background: ${p => p.theme.color1};
   margin-right: 10px;
