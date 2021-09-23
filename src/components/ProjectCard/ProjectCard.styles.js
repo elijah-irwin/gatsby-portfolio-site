@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  min-height: 350px;
+  min-height: 300px;
   border-radius: 20px;
   box-shadow: ${p => p.theme.shadow};
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
   background-size: cover;
   padding: 20px;
   color: ${p => p.theme.white};
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Top = styled.div`
@@ -43,4 +45,18 @@ export const Links = styled.div`
 
 export const Desc = styled.div`
   font-size: 1.1em;
+`;
+
+export const Chips = styled.div`
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+`;
+
+export const Chip = styled.div`
+  padding: 5px 10px;
+  font-weight: 700;
+  border-radius: 7px;
+  background: ${p => p.theme.color1};
+  margin-right: 10px;
 `;

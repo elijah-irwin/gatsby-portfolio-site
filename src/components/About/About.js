@@ -35,7 +35,7 @@ const About = () => {
           <P>
             Currently working at <Span>TD Securities</Span> as a{' '}
             <Span>Technical Lead</Span> developing tools to simplify the
-            creation of new apps.
+            creation of new web apps.
           </P>
         </Text>
         <MagicHeadshot />

@@ -16,12 +16,12 @@ const Work = () => {
       <Header text='.work' />
       <Cards>
         <Row1>
-          <ProjectCard project={projects.a} />
-          <ProjectCard project={projects.a} />
+          <ProjectCard project={projects.tbd} />
+          <ProjectCard project={projects.chatApp} />
         </Row1>
         <Row2>
-          <ProjectCard project={projects.a} />
-          <ProjectCard project={projects.a} />
+          <ProjectCard project={projects.eComm} />
+          <ProjectCard project={projects.rateMyRotation} />
         </Row2>
       </Cards>
       <Archive>view the archive</Archive>

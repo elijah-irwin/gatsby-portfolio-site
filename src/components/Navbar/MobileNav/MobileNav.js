@@ -51,7 +51,7 @@ const MobileNav = () => {
           <ul>
             <li>.about</li>
             <li>.work</li>
-            <li>.writing</li>
+            <li>.tools</li>
             <li>.contact</li>
           </ul>
           <BigButton light>Message Me</BigButton>

@@ -16,6 +16,7 @@ export const Body = styled.main`
 
 export const ThemeToggle = styled.div`
   display: none;
+  cursor: pointer;
 
   @media ${breaks.tablet} {
     display: block;

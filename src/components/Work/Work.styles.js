@@ -10,6 +10,7 @@ export const Cards = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: ${gap};
+  padding-top: 10px;
 `;
 
 export const Row1 = styled.div`
@@ -20,7 +21,7 @@ export const Row1 = styled.div`
 
 export const Row2 = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 3fr;
   gap: ${gap};
 `;
 
