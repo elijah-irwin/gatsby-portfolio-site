@@ -12,7 +12,7 @@ const DesktopNav = () => (
     <Links>
       <li>.about</li>
       <li>.work</li>
-      <li>.tools</li>
+      <li>.skills</li>
       <li>.contact</li>
     </Links>
     <Bottom>

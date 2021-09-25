@@ -2,14 +2,14 @@ import React from 'react';
 
 // Components
 import Layout from '../components/Layout/Layout';
-import Proj from '../components/Projects/Projects';
+import Res from '../components/Resume/Resume';
 
-const Projects = () => {
+const Resume = () => {
   return (
     <Layout>
-      <Proj />
+      <Res />
     </Layout>
   );
 };
 
-export default Projects;
+export default Resume;
