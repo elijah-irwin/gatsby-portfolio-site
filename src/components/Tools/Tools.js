@@ -1,10 +1,9 @@
 import React from 'react';
 import { DiMongodb } from 'react-icons/di';
-import { SiFirebase } from 'react-icons/si';
+import { SiFirebase, SiGatsby, SiTypescript } from 'react-icons/si';
 import {
   FaReact,
   FaSass,
-  FaJsSquare,
   FaNodeJs,
   FaGitAlt,
   FaFigma,
@@ -22,7 +21,11 @@ const Tools = () => {
   const tools = [
     { icon: <FaReact />, text: 'React' },
     { icon: <FaSass />, text: 'Sass' },
-    { icon: <FaJsSquare />, text: 'Javascript' },
+    {
+      icon: <SiTypescript style={{ borderRadius: '10%' }} />,
+      text: 'Typescript',
+    },
+    { icon: <SiGatsby />, text: 'Gatsby' },
     { icon: <FaNodeJs />, text: 'Node' },
     { icon: <DiMongodb />, text: 'Mongo' },
     { icon: <SiFirebase />, text: 'Firebase' },

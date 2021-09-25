@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 // Components
 import Layout from '../components/Layout/Layout';
@@ -10,10 +11,18 @@ import Contact from '../components/Contact/Contact';
 const Landing = () => {
   return (
     <Layout>
-      <About />
-      <Work />
-      <Tools />
-      <Contact />
+      <Fade bottom distance='100px' fraction={0.4}>
+        <About />
+      </Fade>
+      <Fade bottom distance='100px' fraction={0.4}>
+        <Work />
+      </Fade>
+      <Fade bottom distance='100px' fraction={0.4}>
+        <Tools />
+      </Fade>
+      <Fade bottom distance='100px' fraction={0.4}>
+        <Contact />
+      </Fade>
     </Layout>
   );
 };
