@@ -6,6 +6,7 @@ import { projects } from './projects-details';
 // Components
 import Header from '../../theme/Header/Header';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import CustomLink from '../../theme/CustomLink/CustomLink';
 
 // Hooks
 import { usePageWidth } from '../../hooks/usePageWidth';
@@ -32,7 +33,9 @@ const Work = () => {
           )}
         </Row2>
       </Cards>
-      <Archive>view the archive</Archive>
+      <Archive>
+        <CustomLink to='/projects'>view the archive</CustomLink>
+      </Archive>
     </Wrapper>
   );
 };

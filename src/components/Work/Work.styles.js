@@ -33,7 +33,7 @@ export const Row2 = styled.div`
 `;
 
 export const Archive = styled.div`
-  text-align: center;
-  color: ${props => props.theme.text.accent};
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
 `;
