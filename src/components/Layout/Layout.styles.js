@@ -6,11 +6,11 @@ export const Body = styled.main`
 
   @media ${breaks.tablet} {
     margin-left: 10rem;
-    padding: 0px 75px;
+    padding: 0px 100px;
   }
 
   @media ${breaks.laptopL} {
-    padding: 0 300px;
+    padding: 0px 300px;
   }
 `;
 
@@ -21,8 +21,8 @@ export const ThemeToggle = styled.div`
   @media ${breaks.tablet} {
     display: block;
     position: fixed;
-    top: 20px;
-    right: 30px;
+    top: 10px;
+    right: 17px;
     color: ${props => props.theme.color1};
 
     & svg {

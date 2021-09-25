@@ -7,10 +7,16 @@ import { projects } from './projects-details';
 import Header from '../../theme/Header/Header';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
+// Hooks
+import { usePageWidth } from '../../hooks/usePageWidth';
+
 // Styles
 import { Wrapper, Cards, Row1, Row2, Archive } from './Work.styles';
+import { sizeNumber } from '../../theme/breakPoints';
 
 const Work = () => {
+  const width = usePageWidth();
+
   return (
     <Wrapper>
       <Header text='.work' />
@@ -21,7 +27,9 @@ const Work = () => {
         </Row1>
         <Row2>
           <ProjectCard project={projects.eComm} />
-          <ProjectCard project={projects.rateMyRotation} />
+          {width > sizeNumber.tablet && (
+            <ProjectCard project={projects.rateMyRotation} />
+          )}
         </Row2>
       </Cards>
       <Archive>view the archive</Archive>

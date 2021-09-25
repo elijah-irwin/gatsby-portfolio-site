@@ -36,7 +36,7 @@ const Tools = () => {
       <Header text='.tools' />
       <Inline>
         {tools.map(tool => (
-          <Tool icon={tool.icon} text={tool.text} />
+          <Tool key={tool.text} icon={tool.icon} text={tool.text} />
         ))}
       </Inline>
     </Wrapper>
