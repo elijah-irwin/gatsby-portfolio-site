@@ -17,6 +17,10 @@ export const Mak = styled.div`
   padding-top: 10px;
   width: 100%;
   text-align: center;
+
+  & a {
+    color: ${p => p.theme.white};
+  }
 `;
 
 export const Links = styled.ul`
@@ -27,7 +31,32 @@ export const Links = styled.ul`
   align-items: center;
 
   & li {
-    margin: 5px;
+    margin: 10px;
+
+    & a {
+      color: ${p => p.theme.white};
+      padding: 0px 5px 5px;
+      font-weight: 500;
+      position: relative;
+
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: ${p => p.theme.white};
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+        left: 0;
+      }
+    }
   }
 `;
 

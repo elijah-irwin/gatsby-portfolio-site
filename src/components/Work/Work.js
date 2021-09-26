@@ -19,7 +19,7 @@ const Work = () => {
   const width = usePageWidth();
 
   return (
-    <Wrapper>
+    <Wrapper id='work'>
       <Header text='.work' />
       <Cards>
         <Row1>

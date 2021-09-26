@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDownCircle } from 'react-feather';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 // Components
 import Header from '../../theme/Header/Header';
@@ -22,7 +23,7 @@ import {
  *********************************************/
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id='about'>
       <div></div>
       <Middle>
         <Text>
@@ -41,7 +42,9 @@ const About = () => {
         <MagicHeadshot />
       </Middle>
       <Bottom>
-        <ArrowDownCircle />
+        <AnchorLink to='/#work'>
+          <ArrowDownCircle />
+        </AnchorLink>
       </Bottom>
     </Wrapper>
   );

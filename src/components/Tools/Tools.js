@@ -35,7 +35,7 @@ const Tools = () => {
   ];
 
   return (
-    <Wrapper>
+    <Wrapper id='tools'>
       <Header text='.tools' />
       <Inline>
         {tools.map(tool => (

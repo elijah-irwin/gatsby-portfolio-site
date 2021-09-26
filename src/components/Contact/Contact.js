@@ -8,7 +8,7 @@ import { Wrapper } from './Contact.styles';
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper id='contact'>
       <Header text='.contact' />
     </Wrapper>
   );

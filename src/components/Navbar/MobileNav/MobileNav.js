@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { FiMenu, FiToggleLeft, FiToggleRight, FiX } from 'react-icons/fi';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 // Components
 import BigButton from '../../../theme/BigButton/BigButton';
@@ -49,10 +50,38 @@ const MobileNav = () => {
         </Top>
         <Items>
           <ul>
-            <li>.about</li>
-            <li>.work</li>
-            <li>.skills</li>
-            <li>.contact</li>
+            <li>
+              <AnchorLink
+                to='/#about'
+                title='.about'
+                stripHash
+                onAnchorLinkClick={menuHandler}
+              />
+            </li>
+            <li>
+              <AnchorLink
+                to='/#work'
+                title='.work'
+                stripHash
+                onAnchorLinkClick={menuHandler}
+              />
+            </li>
+            <li>
+              <AnchorLink
+                to='/#tools'
+                title='.tools'
+                stripHash
+                onAnchorLinkClick={menuHandler}
+              />
+            </li>
+            <li>
+              <AnchorLink
+                to='/#contact'
+                title='.contact'
+                stripHash
+                onAnchorLinkClick={menuHandler}
+              />
+            </li>
           </ul>
           <BigButton light>Message Me</BigButton>
           <Socials></Socials>

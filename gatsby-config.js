@@ -8,6 +8,8 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {

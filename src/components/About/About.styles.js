@@ -66,8 +66,11 @@ export const Bottom = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.text.accent};
     animation: ${bounce} 2s ease-in-out infinite;
+
+    & a {
+      color: ${props => props.theme.text.accent};
+    }
 
     & svg {
       height: 40px;

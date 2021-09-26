@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 // Components
 import Socials from '../../../theme/Socials/Socials';
@@ -8,12 +9,22 @@ import { Nav, Mak, Links, Bottom } from './DesktopNav.styles';
 
 const DesktopNav = () => (
   <Nav>
-    <Mak>mak</Mak>
+    <Mak>
+      <AnchorLink to='/#about' title='mak' />
+    </Mak>
     <Links>
-      <li>.about</li>
-      <li>.work</li>
-      <li>.skills</li>
-      <li>.contact</li>
+      <li>
+        <AnchorLink to='/#about' title='.about' stripHash />
+      </li>
+      <li>
+        <AnchorLink to='/#work' title='.work' stripHash />
+      </li>
+      <li>
+        <AnchorLink to='/#tools' title='.tools' stripHash />
+      </li>
+      <li>
+        <AnchorLink to='/#contact' title='.contact' stripHash />
+      </li>
     </Links>
     <Bottom>
       <Socials />

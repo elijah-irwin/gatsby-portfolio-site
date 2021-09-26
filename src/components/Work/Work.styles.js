@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { breaks } from '../../theme/breakPoints';
 
 export const Wrapper = styled.div`
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 `;
 
 const gap = '20px;';

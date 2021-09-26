@@ -5,6 +5,7 @@ export const Nav = styled.nav`
   top: 0;
   background-color: ${p => p.theme.main.bgColor};
   width: 100%;
+  z-index: 1;
 `;
 
 export const NavItems = styled.div`
@@ -60,6 +61,7 @@ export const Drawer = styled.div`
   flex-direction: column;
   background-color: ${p => p.theme.sidenav.bgColor};
   transition: 0.4s left ease-in-out;
+  z-index: 1;
 `;
 
 export const Top = styled.div`
@@ -82,5 +84,9 @@ export const Items = styled.div`
   & li {
     padding: 10px;
     font-weight: 600;
+
+    & a {
+      color: ${p => p.theme.white};
+    }
   }
 `;
