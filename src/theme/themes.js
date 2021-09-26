@@ -1,7 +1,13 @@
-export const dark = {
-  color: 'purple',
+const colors = {
+  red: '#D06161',
+  purple: '#6E6CD7',
+  blue: '#6079D1',
+};
 
-  color1: '#6E6CD7',
+const mainColor = colors.purple;
+
+export const dark = {
+  color1: mainColor,
   white: 'whitesmoke',
 
   x: 'whitesmoke',
@@ -12,24 +18,26 @@ export const dark = {
   text: {
     color: '#949494',
     header: 'whitesmoke',
-    accent: '#6E6CD7',
+    accent: mainColor,
   },
 
   sidenav: {
-    bgColor: '#6E6CD7',
+    bgColor: mainColor,
   },
 
   main: {
     bgColor: '#282A2F',
   },
 
+  projectTable: {
+    name: 'whitesmoke',
+  },
+
   shadow: '0px 2px 6px rgba(0, 0, 0, 0.4)',
 };
 
 export const light = {
-  color: 'yellow',
-
-  color1: '#6E6CD7',
+  color1: mainColor,
   white: 'whitesmoke',
 
   x: 'whitesmoke',
@@ -40,15 +48,19 @@ export const light = {
   text: {
     color: '#373737',
     header: '#373737',
-    accent: '#6E6CD7',
+    accent: mainColor,
   },
 
   sidenav: {
-    bgColor: '#6E6CD7',
+    bgColor: mainColor,
   },
 
   main: {
     bgColor: '#DEDFE1',
+  },
+
+  projectTable: {
+    name: '#373737',
   },
 
   shadow: '0px 2px 6px rgba(0, 0, 0, 0.25)',

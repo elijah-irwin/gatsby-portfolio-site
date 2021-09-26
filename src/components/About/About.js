@@ -28,6 +28,7 @@ const About = () => {
       <Middle>
         <Text>
           <Header text='.about' />
+          {/* <P>Nice of you to stop by! I'm mak. 👋</P> */}
           <P>
             A <Span>developer</Span> and <Fancy>(on occasion)</Fancy>{' '}
             <Span>designer</Span> passionate about simplifying development
@@ -35,7 +36,7 @@ const About = () => {
           </P>
           <P>
             Currently working at <Span>TD Securities</Span> as a{' '}
-            <Span>Technical Lead</Span> developing tools to simplify the
+            <Span>Technical Lead</Span> developing tools to streamline the
             creation of new web apps.
           </P>
         </Text>

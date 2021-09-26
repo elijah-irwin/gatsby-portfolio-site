@@ -66,7 +66,7 @@ export const Bottom = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: ${bounce} 2s ease-in-out infinite;
+    animation: ${bounce} 1.5s ease-in-out infinite;
 
     & a {
       color: ${props => props.theme.text.accent};
