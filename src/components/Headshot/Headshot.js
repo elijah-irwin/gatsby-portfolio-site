@@ -4,10 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 // Contexts
 import { AppContext } from '../../contexts/AppContext';
 
-// Components
-import Socials from '../../theme/Socials/Socials';
-import BigButton from '../../theme/BigButton/BigButton';
-
 // Styles
 import './Headshot.css';
 import { Wrapper } from './Headshot.styles';
@@ -24,8 +20,6 @@ const Headshot = ({ className }) => {
         width={270}
         quality={100}
       />
-      <BigButton>Message Me</BigButton>
-      <Socials dark />
     </Wrapper>
   );
 };

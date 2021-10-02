@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   min-height: 275px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: ${p => p.theme.shadow};
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${p => p.bgImage}) center no-repeat;
