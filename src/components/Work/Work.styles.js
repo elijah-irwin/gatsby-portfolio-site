@@ -3,7 +3,6 @@ import { breaks } from '../../theme/breakPoints';
 
 export const Wrapper = styled.div`
   padding-top: 100px;
-  padding-bottom: 100px;
 `;
 
 const gap = '20px;';

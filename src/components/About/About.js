@@ -28,9 +28,8 @@ const About = () => {
       <Middle>
         <Text>
           <Header text='.about' />
-          {/* <P>Nice of you to stop by! I'm mak. 👋</P> */}
           <P>
-            A <Span>developer</Span> and <Fancy>(on occasion)</Fancy>{' '}
+            A <Span>fullstack developer</Span> and <Fancy>(on occasion)</Fancy>{' '}
             <Span>designer</Span> passionate about simplifying development
             workflows. You can usually find me busy refactoring something.
           </P>
