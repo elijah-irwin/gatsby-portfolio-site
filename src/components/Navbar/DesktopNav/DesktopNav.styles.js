@@ -4,10 +4,11 @@ export const Nav = styled.nav`
   color: ${p => p.theme.white};
   position: fixed;
   height: 100vh;
-  width: 10rem;
+  width: 9rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: ${props => props.theme.sidenav.bgColor};
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Mak = styled.div`
@@ -45,7 +46,7 @@ export const Links = styled.ul`
         content: '';
         display: block;
         height: 2px;
-        left: 50%;
+        left: 0%;
         position: absolute;
         background: ${p => p.theme.white};
         transition: width 0.3s ease 0s, left 0.3s ease 0s;

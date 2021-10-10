@@ -25,6 +25,9 @@ const DesktopNav = () => (
       <li>
         <AnchorLink to='/#contact' title='.contact' stripHash />
       </li>
+      <li>
+        <AnchorLink to='/resume' title='.resume' stripHash />
+      </li>
     </Links>
     <Bottom>
       <Socials />

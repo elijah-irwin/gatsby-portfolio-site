@@ -14,7 +14,7 @@ const Styles = styled(Link)`
     content: '';
     display: block;
     height: 2px;
-    left: 50%;
+    left: 0%;
     position: absolute;
     background: ${p => p.theme.color1};
     transition: width 0.3s ease 0s, left 0.3s ease 0s;

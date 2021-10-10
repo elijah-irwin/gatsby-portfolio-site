@@ -82,7 +82,7 @@ const BulletIcon = styled.div`
 const Bullet = ({ children }) => (
   <Flex>
     <BulletIcon>
-      <FiCircle size={10} />
+      <FiCircle size={7} />
     </BulletIcon>
     <div>{children}</div>
   </Flex>

@@ -5,7 +5,7 @@ export const Body = styled.main`
   padding: 0px 20px;
 
   @media ${breaks.tablet} {
-    margin-left: 10rem;
+    margin-left: 9rem;
     padding: 0px 100px;
   }
 

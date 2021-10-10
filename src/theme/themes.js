@@ -4,7 +4,7 @@ const colors = {
   blue: '#6079D1',
 };
 
-const mainColor = colors.purple;
+const mainColor = colors.red;
 
 export const dark = {
   color1: mainColor,

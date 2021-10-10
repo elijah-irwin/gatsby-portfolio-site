@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 `;
 
 export const Inline = styled.div`

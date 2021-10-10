@@ -3,7 +3,6 @@ import { FiMenu, FiToggleLeft, FiToggleRight, FiX } from 'react-icons/fi';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 // Components
-import BigButton from '../../../theme/BigButton/BigButton';
 import Socials from '../../../theme/Socials/Socials';
 
 // Styles
@@ -82,9 +81,16 @@ const MobileNav = () => {
                 onAnchorLinkClick={menuHandler}
               />
             </li>
+            <li>
+              <AnchorLink
+                to='/resume'
+                title='.resume'
+                stripHash
+                onAnchorLinkClick={menuHandler}
+              />
+            </li>
           </ul>
-          <BigButton light>Message Me</BigButton>
-          <Socials></Socials>
+          <Socials />
         </Items>
       </Drawer>
     </>
