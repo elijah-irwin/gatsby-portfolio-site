@@ -35,4 +35,5 @@ export const Archive = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  font-size: 1.1rem;
 `;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
 
 // Components
 import Header from '../../theme/Header/Header';
@@ -20,9 +19,7 @@ const Projects = () => {
     <Wrap>
       <Header text='.archive' />
       <ArchiveLinks />
-      <Fade bottom distance='100px' fraction={0.4}>
-        <ProjectsTable />
-      </Fade>
+      <ProjectsTable />
     </Wrap>
   );
 };

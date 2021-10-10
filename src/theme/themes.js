@@ -33,6 +33,10 @@ export const dark = {
     name: 'whitesmoke',
   },
 
+  resume: {
+    card: '#232529',
+  },
+
   shadow: '0px 2px 6px rgba(0, 0, 0, 0.4)',
 };
 
@@ -61,6 +65,10 @@ export const light = {
 
   projectTable: {
     name: '#373737',
+  },
+
+  resume: {
+    card: '#E4E4E4',
   },
 
   shadow: '0px 2px 6px rgba(0, 0, 0, 0.25)',

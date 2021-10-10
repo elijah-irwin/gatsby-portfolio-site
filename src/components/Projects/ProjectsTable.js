@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { GitHub, Link } from 'react-feather';
+import Fade from 'react-reveal/Fade';
 
 // Data
 import { projectData } from './project-data';
@@ -83,13 +84,16 @@ const ProjectsTable = () => {
   return (
     <Wrap>
       <Grid>
-        <Header>year</Header>
-        <Header>name</Header>
-        <Header>made at</Header>
-        <Header>built with</Header>
-        <Header>links</Header>
+        <Fade bottom>
+          <Header>year</Header>
+          <Header>name</Header>
+          <Header>made at</Header>
+          <Header>built with</Header>
+          <Header>links</Header>
+        </Fade>
+
         {projectData.map(project => (
-          <>
+          <Fade bottom>
             <Year>{project.year}</Year>
             <Name>{project.name}</Name>
             <MadeAt>{project.madeAt}</MadeAt>
@@ -112,7 +116,7 @@ const ProjectsTable = () => {
                 <GitHub />
               </a>
             </Links>
-          </>
+          </Fade>
         ))}
       </Grid>
     </Wrap>
