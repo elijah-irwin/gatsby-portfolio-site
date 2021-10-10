@@ -14,7 +14,11 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Nunito Sans:300,400,600,700', 'Caveat:400,500,600'],
+          families: [
+            'Nunito Sans:300,400,600,700',
+            'Caveat:400,500,600',
+            'Roboto Mono:400,500',
+          ],
         },
       },
     },

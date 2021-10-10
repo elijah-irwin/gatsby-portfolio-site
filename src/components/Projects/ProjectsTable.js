@@ -1,46 +1,78 @@
 import React from 'react';
 import styled from 'styled-components';
+import { GitHub, Link } from 'react-feather';
 
 // Data
 import { projectData } from './project-data';
 
-// Components
-import ProjectItem from './ProjectItem';
-
 // Styles
 const Wrap = styled.div`
   margin-top: 60px;
+  margin-bottom: 60px;
 `;
 
-const Headers = styled.div`
+const Grid = styled.div`
   display: grid;
-  gap: 50px;
+  gap: 25px 50px;
   grid-template-columns: 1fr 3fr 2fr 5fr 1fr;
   font-size: 1.7rem;
-  font-weight: 600;
-  margin-bottom: 25px;
-  margin-right: 0.5rem;
 
   & div {
     white-space: nowrap;
   }
 `;
 
-const Projects = styled.div`
-  max-height: 50vh;
-  overflow-y: auto;
+const Header = styled.div`
+  font-weight: 600;
+`;
 
-  &::-webkit-scrollbar {
-    width: 0.5rem;
+const Year = styled.div`
+  color: ${p => p.theme.color1};
+  font-size: 1.3rem;
+  font-family: 'Roboto Mono', sans-serif;
+`;
+
+const Name = styled.div`
+  color: ${p => p.theme.projectTable.name};
+  font-size: 1.3rem;
+  font-weight: 600;
+`;
+
+const MadeAt = styled.div`
+  font-size: 1.2rem;
+`;
+
+const BuiltWith = styled.div`
+  font-size: 1rem;
+  display: flex;
+`;
+
+const Tool = styled.div`
+  &:after {
+    font-size: 1.2rem;
+    content: '·';
+    margin: 6px;
+    color: ${p => p.theme.color1};
   }
 
-  &::-webkit-scrollbar-track {
-    background: ${props => props.theme.main.bgColor};
+  &:last-child:after {
+    content: '';
   }
+`;
 
-  &::-webkit-scrollbar-thumb {
-    background: ${props => props.theme.sidenav.bgColor};
-    border-radius: 5px;
+const Links = styled.div`
+  display: flex;
+  align-items: center;
+
+  & a {
+    cursor: pointer;
+    transition: 0.2s color ease-in;
+    margin-right: 15px;
+    color: ${p => p.theme.text.color};
+
+    &:hover {
+      color: ${p => p.theme.color1};
+    }
   }
 `;
 
@@ -50,18 +82,39 @@ const Projects = styled.div`
 const ProjectsTable = () => {
   return (
     <Wrap>
-      <Headers>
-        <div>year</div>
-        <div>name</div>
-        <div>made at</div>
-        <div>built with</div>
-        <div>links</div>
-      </Headers>
-      <Projects>
+      <Grid>
+        <Header>year</Header>
+        <Header>name</Header>
+        <Header>made at</Header>
+        <Header>built with</Header>
+        <Header>links</Header>
         {projectData.map(project => (
-          <ProjectItem project={project} key={project.name} />
+          <>
+            <Year>{project.year}</Year>
+            <Name>{project.name}</Name>
+            <MadeAt>{project.madeAt}</MadeAt>
+            <BuiltWith>
+              {project.builtWith.map(tool => (
+                <Tool key={tool}>{tool}</Tool>
+              ))}
+            </BuiltWith>
+            <Links>
+              <a
+                href={project.links.demo}
+                target='_blank'
+                rel='noopener noreferrer'>
+                <Link />
+              </a>
+              <a
+                href={project.links.github}
+                target='_blank'
+                rel='noopener noreferrer'>
+                <GitHub />
+              </a>
+            </Links>
+          </>
         ))}
-      </Projects>
+      </Grid>
     </Wrap>
   );
 };

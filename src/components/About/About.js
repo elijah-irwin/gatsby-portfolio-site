@@ -29,7 +29,7 @@ const About = () => {
         <Text>
           <Header text='.about' />
           <P>
-            A <Span>fullstack developer</Span> and <Fancy>(on occasion)</Fancy>{' '}
+            A <Span>developer</Span> and <Fancy>(on occasion)</Fancy>{' '}
             <Span>designer</Span> passionate about simplifying development
             workflows. You can usually find me busy refactoring something.
           </P>

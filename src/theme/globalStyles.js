@@ -52,7 +52,6 @@ export const GlobalStyles = createGlobalStyle`
 
   body::-webkit-scrollbar-thumb {
     background: ${props => props.theme.sidenav.bgColor};
-    border-radius: 5px;
   }
 
   ol, ul {

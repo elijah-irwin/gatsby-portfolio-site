@@ -9,7 +9,8 @@ export const P = styled.p`
   font-size: 1.7rem;
   font-weight: 300;
   max-width: 55%;
-  margin: 50px 0px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 `;
 
 export const Options = styled.div`
