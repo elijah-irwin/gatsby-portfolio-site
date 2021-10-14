@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
 
 export const Middle = styled.div`
   display: grid;
+  align-items: center;
 
   @media ${breaks.laptop} {
     grid-template-columns: 1.5fr 1fr;

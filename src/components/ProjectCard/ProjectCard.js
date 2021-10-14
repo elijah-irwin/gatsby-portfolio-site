@@ -2,13 +2,15 @@ import React from 'react';
 import { GitHub, Link } from 'react-feather';
 
 // Styles
-import { Wrapper, Top, Links, Desc, Chips, Chip } from './ProjectCard.styles';
+import { Wrapper, Top, Links, Desc, Name } from './ProjectCard.styles';
 
 const ProjectCard = ({ project }) => {
   return (
-    <Wrapper bgImage={project.bgImage}>
+    <Wrapper>
       <Top>
-        <h3>{project.title}</h3>
+        <h3>
+          {project.tags[0]} / {project.tags[1]}
+        </h3>
         <Links>
           {project.demo && (
             <a href={project.demo} target='_blank' rel='noopener noreferrer'>
@@ -22,12 +24,8 @@ const ProjectCard = ({ project }) => {
           )}
         </Links>
       </Top>
+      <Name>{project.title}</Name>
       <Desc>{project.description}</Desc>
-      <Chips>
-        {project.tags.map(tag => (
-          <Chip key={tag}>{tag}</Chip>
-        ))}
-      </Chips>
     </Wrapper>
   );
 };

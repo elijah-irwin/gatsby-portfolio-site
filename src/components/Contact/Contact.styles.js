@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 export const P = styled.p`
   font-size: 1.7rem;
   font-weight: 300;
-  max-width: 55%;
+  max-width: 65%;
   margin-top: 40px;
   margin-bottom: 50px;
 `;
@@ -41,7 +41,7 @@ export const Item = styled.a`
     content: '';
     display: block;
     height: 2px;
-    left: 50%;
+    left: 0%;
     position: absolute;
     background: ${p => p.theme.color1};
     transition: width 0.3s ease 0s, left 0.3s ease 0s;

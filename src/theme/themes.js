@@ -2,9 +2,10 @@ const colors = {
   red: '#D06161',
   purple: '#6E6CD7',
   blue: '#6079D1',
+  gradient: 'linear-gradient(to top, #91eae4, #86a8e7, #7f7fd5)',
 };
 
-const mainColor = colors.red;
+const mainColor = colors.purple;
 
 export const dark = {
   color1: mainColor,

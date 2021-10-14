@@ -4,8 +4,8 @@ export const projects = {
   rateMyRotation: {
     title: 'Rate My Rotation',
     description:
-      'Platform for reviewing associate job placements within the TD Bank rotational program. Aims to provide the associates with more information when selecting a rotation to ensure it will be a good experience!',
-    github: null,
+      'Aims to provide the associates with more information when selecting a rotation to ensure it will be a good experience!',
+    github: 'https://rate-my-rotation.firebaseapp.com/',
     demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
     tags: ['React', 'Firebase'],
@@ -15,8 +15,8 @@ export const projects = {
     title: 'Chat Me',
     description:
       'A simple real-time messaging application with support for multiple chat rooms.',
-    github: null,
-    demo: null,
+    github: 'https://rate-my-rotation.firebaseapp.com/',
+    demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
     tags: ['React', 'Node', 'Socket.io'],
   },
@@ -24,9 +24,9 @@ export const projects = {
   eComm: {
     title: 'My Mechs',
     description:
-      'A mock e-commerce site build from scratch as a learning project. Contains searching, pagination, and checkout with PayPal integration.',
-    github: null,
-    demo: null,
+      'Mock e-commerce site build from scratch as a learning project. Contains searching, pagination, and checkout with PayPal integration.',
+    github: 'https://rate-my-rotation.firebaseapp.com/',
+    demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
     tags: ['React', 'Node', 'Redux'],
   },
@@ -34,9 +34,9 @@ export const projects = {
   tbd: {
     title: 'Supa Dope Project',
     description: 'Amazing really, never before seen ideas here. Amazing.',
-    github: null,
-    demo: null,
+    github: 'https://rate-my-rotation.firebaseapp.com/',
+    demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
-    tags: ['React'],
+    tags: ['React', 'Express'],
   },
 };

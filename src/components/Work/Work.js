@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiArrowRightCircle } from 'react-icons/fi';
 
 // Project Details
 import { projects } from './projects-details';
@@ -6,13 +7,21 @@ import { projects } from './projects-details';
 // Components
 import Header from '../../theme/Header/Header';
 import ProjectCard from '../ProjectCard/ProjectCard';
-import CustomLink from '../../theme/CustomLink/CustomLink';
 
 // Hooks
 import { usePageWidth } from '../../hooks/usePageWidth';
 
 // Styles
-import { Wrapper, Cards, Row1, Row2, Archive } from './Work.styles';
+import {
+  Wrapper,
+  Cards,
+  Row1,
+  Row2,
+  ViewAllCard,
+  Top,
+  Name,
+  Icon,
+} from './Work.styles';
 import { sizeNumber } from '../../theme/breakPoints';
 
 const Work = () => {
@@ -23,19 +32,27 @@ const Work = () => {
       <Header text='.work' />
       <Cards>
         <Row1>
-          <ProjectCard project={projects.tbd} />
+          <ProjectCard project={projects.rateMyRotation} />
           <ProjectCard project={projects.chatApp} />
         </Row1>
         <Row2>
-          <ProjectCard project={projects.eComm} />
           {width > sizeNumber.tablet && (
-            <ProjectCard project={projects.rateMyRotation} />
+            <ProjectCard project={projects.eComm} />
           )}
+          <ViewAllCard>
+            <div>
+              <Top>10+ projects</Top>
+              <Name>
+                View The
+                <br /> Archive
+              </Name>
+            </div>
+            <Icon>
+              <FiArrowRightCircle />
+            </Icon>
+          </ViewAllCard>
         </Row2>
       </Cards>
-      <Archive>
-        <CustomLink to='/projects'>view the archive</CustomLink>
-      </Archive>
     </Wrapper>
   );
 };

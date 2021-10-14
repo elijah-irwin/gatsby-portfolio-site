@@ -10,7 +10,7 @@ export const Body = styled.main`
   }
 
   @media ${breaks.laptopL} {
-    padding: 0px 300px;
+    padding: 0px 350px;
   }
 `;
 

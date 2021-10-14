@@ -14,9 +14,7 @@ const Landing = () => {
       <Fade bottom distance='100px' fraction={0.4}>
         <About />
       </Fade>
-      <Fade bottom distance='100px' fraction={0.4}>
-        <Work />
-      </Fade>
+      <Work />
       <Fade bottom distance='100px' fraction={0.4}>
         <Tools />
       </Fade>
