@@ -29,6 +29,10 @@ export const Text = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  > :last-child {
+    margin-bottom: 0px;
+  }
 `;
 
 export const MagicHeadshot = styled(Headshot)`

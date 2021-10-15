@@ -7,6 +7,7 @@ import Header from '../../theme/Header/Header';
 import ArchiveLinks from '../../theme/ArchiveLinks/ArchiveLinks';
 import Card from './Card';
 import TechnicalJots from './TechnicalJots';
+import SlideIn from '../../animations/SlideIn';
 
 // Context
 import { experience, education, technical, soft, interests } from './content';
@@ -64,16 +65,16 @@ const Resume = () => {
       <ArchiveLinks />
       <Grid>
         <div>
-          <Fade bottom>
+          <SlideIn>
             <SubHeader>.experience</SubHeader>
             {experience.map(entry => (
               <Card key={entry.title} entry={entry} />
             ))}
-          </Fade>
+          </SlideIn>
         </div>
 
         <div>
-          <Fade bottom delay={600}>
+          <SlideIn delay={600}>
             <MarginBottom>
               <SubHeader>.education</SubHeader>
               <Card entry={education} />
@@ -102,7 +103,7 @@ const Resume = () => {
                 ))}
               </InterestItem>
             </MarginBottom>
-          </Fade>
+          </SlideIn>
         </div>
       </Grid>
     </Wrap>

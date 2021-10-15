@@ -1,4 +1,5 @@
 import React from 'react';
+import { navigate } from 'gatsby-link';
 import { FiArrowRightCircle } from 'react-icons/fi';
 
 // Project Details
@@ -7,6 +8,7 @@ import { projects } from './projects-details';
 // Components
 import Header from '../../theme/Header/Header';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import SlideIn from '../../animations/SlideIn';
 
 // Hooks
 import { usePageWidth } from '../../hooks/usePageWidth';
@@ -26,31 +28,46 @@ import { sizeNumber } from '../../theme/breakPoints';
 
 const Work = () => {
   const width = usePageWidth();
+  const isTablet = width > sizeNumber.tablet;
+  const isDesktop = width > sizeNumber.laptop;
 
   return (
     <Wrapper id='work'>
-      <Header text='.work' />
+      <SlideIn flex>
+        <Header text='.work' />
+      </SlideIn>
+
       <Cards>
         <Row1>
-          <ProjectCard project={projects.rateMyRotation} />
-          <ProjectCard project={projects.chatApp} />
+          <SlideIn flex>
+            <ProjectCard project={projects.rateMyRotation} />
+          </SlideIn>
+          <SlideIn delay={isDesktop ? 300 : 0}>
+            <ProjectCard project={projects.chatApp} />
+          </SlideIn>
         </Row1>
+
         <Row2>
-          {width > sizeNumber.tablet && (
-            <ProjectCard project={projects.eComm} />
+          {isTablet && (
+            <SlideIn flex>
+              <ProjectCard project={projects.eComm} />
+            </SlideIn>
           )}
-          <ViewAllCard>
-            <div>
-              <Top>10+ projects</Top>
-              <Name>
-                View The
-                <br /> Archive
-              </Name>
-            </div>
-            <Icon>
-              <FiArrowRightCircle />
-            </Icon>
-          </ViewAllCard>
+
+          <SlideIn delay={isDesktop ? 300 : 0} flex>
+            <ViewAllCard onClick={() => navigate('/projects')}>
+              <div>
+                <Top>10+ projects</Top>
+                <Name>
+                  View The
+                  <br /> Archive
+                </Name>
+              </div>
+              <Icon>
+                <FiArrowRightCircle />
+              </Icon>
+            </ViewAllCard>
+          </SlideIn>
         </Row2>
       </Cards>
     </Wrapper>

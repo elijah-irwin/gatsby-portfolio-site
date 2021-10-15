@@ -93,7 +93,7 @@ const ProjectsTable = () => {
         </Fade>
 
         {projectData.map(project => (
-          <Fade bottom>
+          <Fade bottom delay={800}>
             <Year>{project.year}</Year>
             <Name>{project.name}</Name>
             <MadeAt>{project.madeAt}</MadeAt>

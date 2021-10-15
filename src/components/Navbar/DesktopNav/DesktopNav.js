@@ -20,9 +20,6 @@ const DesktopNav = () => (
         <AnchorLink to='/#work' title='.work' stripHash />
       </li>
       <li>
-        <AnchorLink to='/#tools' title='.tools' stripHash />
-      </li>
-      <li>
         <AnchorLink to='/#contact' title='.contact' stripHash />
       </li>
       <li>

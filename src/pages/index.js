@@ -18,9 +18,7 @@ const Landing = () => {
       <Fade bottom distance='100px' fraction={0.4}>
         <Tools />
       </Fade>
-      <Fade bottom distance='100px' fraction={0.4}>
-        <Contact />
-      </Fade>
+      <Contact />
     </Layout>
   );
 };

@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 export const ViewAllCard = styled.div`
   min-height: 250px;
   border-radius: 10px;
+  width: 100%;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   background-color: ${p => p.theme.resume.card};
   background-size: cover;

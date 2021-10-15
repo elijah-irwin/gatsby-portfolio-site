@@ -27,15 +27,15 @@ const About = () => {
       <div></div>
       <Middle>
         <Text>
-          <Header text='.about' />
+          <Header text="Hello, I'm Mak." />
           <P>
             A <Span>developer</Span> and <Fancy>(on occasion)</Fancy>{' '}
             <Span>designer</Span> passionate about simplifying development
-            workflows. You can usually find me busy refactoring something.
+            workflows.
           </P>
           <P>
             Currently working at <Span>TD Securities</Span> as a{' '}
-            <Span>Technical Lead</Span> developing tools to streamline the
+            <Span>Technical Lead</Span> producing tools to streamline the
             creation of new web apps.
           </P>
         </Text>
