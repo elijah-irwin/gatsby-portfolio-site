@@ -42,7 +42,7 @@ const Work = () => {
           <SlideIn flex>
             <ProjectCard project={projects.rateMyRotation} />
           </SlideIn>
-          <SlideIn delay={isDesktop ? 300 : 0}>
+          <SlideIn delay={isDesktop ? 300 : 0} flex>
             <ProjectCard project={projects.chatApp} />
           </SlideIn>
         </Row1>

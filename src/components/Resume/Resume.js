@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
 
 // Components
 import Header from '../../theme/Header/Header';
@@ -13,21 +12,28 @@ import SlideIn from '../../animations/SlideIn';
 import { experience, education, technical, soft, interests } from './content';
 
 // Styles
+import { breaks } from '../../theme/breakPoints';
+
 const Wrap = styled.div`
-  padding-top: 100px;
-  padding-bottom: 40px;
+  @media ${breaks.tablet} {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 `;
 
 const Grid = styled.div`
   margin-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
+
+  @media ${breaks.laptop} {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
 `;
 
 const SubHeader = styled.div`
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: ${props => props.theme.text.header};
 `;
 
@@ -52,7 +58,7 @@ const SoftPills = styled.div`
 
 const InterestItem = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px 20px;
   font-size: 1.3rem;
   color: ${p => p.theme.text.header};

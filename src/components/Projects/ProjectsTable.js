@@ -3,20 +3,39 @@ import styled from 'styled-components';
 import { GitHub, Link } from 'react-feather';
 import Fade from 'react-reveal/Fade';
 
+// Hooks
+import { usePageWidth } from '../../hooks/usePageWidth';
+
 // Data
 import { projectData } from './project-data';
 
 // Styles
+import { sizeNumber, breaks } from '../../theme/breakPoints';
+
 const Wrap = styled.div`
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media ${breaks.mobileL} {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
-  gap: 25px 50px;
-  grid-template-columns: 1fr 3fr 2fr 5fr 1fr;
+  gap: 25px 25px;
+  grid-template-columns: 1fr 3fr 1fr;
   font-size: 1.7rem;
+
+  @media ${breaks.mobileL} {
+    grid-template-columns: 1fr 3fr 2fr 1fr;
+  }
+
+  @media ${breaks.laptop} {
+    gap: 25px 25px;
+    grid-template-columns: 1fr 3fr 2fr 5fr 1fr;
+  }
 
   & div {
     white-space: nowrap;
@@ -81,27 +100,33 @@ const Links = styled.div`
  * - ProjectsTable.js -
  ******************************/
 const ProjectsTable = () => {
+  const width = usePageWidth();
+  const isLaptop = width >= sizeNumber.laptop;
+  const isMobile = width >= sizeNumber.mobileL;
+
   return (
     <Wrap>
       <Grid>
-        <Fade bottom>
-          <Header>year</Header>
-          <Header>name</Header>
-          <Header>made at</Header>
-          <Header>built with</Header>
-          <Header>links</Header>
-        </Fade>
+        {/* <Fade bottom> */}
+        <Header>year</Header>
+        <Header>name</Header>
+        {isMobile && <Header>made at</Header>}
+        {isLaptop && <Header>built with</Header>}
+        <Header>links</Header>
+        {/* </Fade> */}
 
         {projectData.map(project => (
-          <Fade bottom delay={800}>
+          <>
             <Year>{project.year}</Year>
             <Name>{project.name}</Name>
-            <MadeAt>{project.madeAt}</MadeAt>
-            <BuiltWith>
-              {project.builtWith.map(tool => (
-                <Tool key={tool}>{tool}</Tool>
-              ))}
-            </BuiltWith>
+            {isMobile && <MadeAt>{project.madeAt}</MadeAt>}
+            {isLaptop && (
+              <BuiltWith>
+                {project.builtWith.map(tool => (
+                  <Tool key={tool}>{tool}</Tool>
+                ))}
+              </BuiltWith>
+            )}
             <Links>
               <a
                 href={project.links.demo}
@@ -116,7 +141,7 @@ const ProjectsTable = () => {
                 <GitHub />
               </a>
             </Links>
-          </Fade>
+          </>
         ))}
       </Grid>
     </Wrap>

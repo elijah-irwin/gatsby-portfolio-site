@@ -1,16 +1,26 @@
 import styled from 'styled-components';
+import { breaks } from '../../theme/breakPoints';
 
 export const Wrapper = styled.div`
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 30px;
+
+  @media ${breaks.tablet} {
+    grid-template-columns: 3fr 2fr;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
 `;
 
 export const P = styled.p`
   font-size: 1.7rem;
   font-weight: 300;
-  max-width: 65%;
-  margin-top: 40px;
+
   margin-bottom: 50px;
+
+  @media ${breaks.tablet} {
+    margin-top: 40px;
+    max-width: 65%;
+  }
 `;
 
 export const Options = styled.div`

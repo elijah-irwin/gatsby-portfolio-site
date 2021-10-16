@@ -13,7 +13,7 @@ const SlideIn = ({ children, delay = 0, flex, ...rest }) => {
       triggerOnce
       delay={delay}
       direction='up'
-      fraction={0.5}
+      fraction={0.4}
       {...rest}>
       {children}
     </Fade>

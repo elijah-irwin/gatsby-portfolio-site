@@ -4,21 +4,25 @@ import { breaks } from '../../theme/breakPoints';
 const gap = '20px;';
 
 export const Wrapper = styled.div`
-  padding-top: 100px;
+  padding-top: 75px;
 `;
 
 export const ViewAllCard = styled.div`
   min-height: 250px;
   border-radius: 10px;
   width: 100%;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   background-color: ${p => p.theme.resume.card};
   background-size: cover;
   padding: 40px;
   color: ${p => p.theme.white};
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
   cursor: pointer;
+
+  @media ${breaks.mobileL} {
+    grid-template-columns: 1fr 1fr;
+  }
 
   &:hover {
     svg {
@@ -35,9 +39,18 @@ export const Icon = styled.div`
 
   svg {
     transition: 0.1s ease-in all;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     color: ${p => p.theme.color1};
+  }
+
+  @media ${breaks.mobileL} {
+    svg {
+      transition: 0.1s ease-in all;
+      height: 100px;
+      width: 100px;
+      color: ${p => p.theme.color1};
+    }
   }
 `;
 

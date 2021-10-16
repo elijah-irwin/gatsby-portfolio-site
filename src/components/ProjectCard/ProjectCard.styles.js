@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   min-height: 250px;
   border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   background-color: ${p => p.theme.resume.card};
   background-size: cover;
   padding: 40px;

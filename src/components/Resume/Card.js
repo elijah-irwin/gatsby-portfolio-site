@@ -31,6 +31,10 @@ const Location = styled.div`
   font-size: 1.1rem;
   margin-bottom: 15px;
 
+  > :first-child {
+    min-width: 50%;
+  }
+
   > :last-child {
     font-family: 'Caveat', sans-serif;
     font-size: 1.2rem;
@@ -39,6 +43,8 @@ const Location = styled.div`
 
 const Pills = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 `;
 
 const Pill = styled.div`
@@ -46,7 +52,6 @@ const Pill = styled.div`
   border-radius: 7px;
   color: ${p => p.theme.white};
   background: ${p => p.theme.color1};
-  margin-right: 10px;
 `;
 
 const Bullets = styled.ul`

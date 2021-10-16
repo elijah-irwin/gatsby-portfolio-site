@@ -7,8 +7,13 @@ import ArchiveLinks from '../../theme/ArchiveLinks/ArchiveLinks';
 import ProjectsTable from './ProjectsTable';
 
 // Styles
+import { breaks } from '../../theme/breakPoints';
+
 const Wrap = styled.div`
-  padding-top: 100px;
+  @media ${breaks.tablet} {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 `;
 
 /******************************

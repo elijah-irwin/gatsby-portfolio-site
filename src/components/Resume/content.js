@@ -2,7 +2,7 @@ export const experience = [
   {
     title: 'Technical Lead',
     location: 'TD Securities',
-    duration: 'January 2021 - Present',
+    duration: 'Jan. 2021 - Pres.',
     pills: ['React', 'Node', 'Express', 'MongoDB'],
     notes: [
       'Responsible for some very cool tasks at this place.',
@@ -13,7 +13,7 @@ export const experience = [
   {
     title: 'Fullstack Developer',
     location: 'TD Securities',
-    duration: 'July - December 2020',
+    duration: 'Jul. - Dec. 2020',
     pills: ['React', 'Node', 'Express', 'MongoDB'],
     notes: [
       'Responsible for some very cool tasks at this place.',
@@ -25,7 +25,7 @@ export const experience = [
     title: 'Systems Analyst',
     analyst: true,
     location: 'TD Bank',
-    duration: 'January - July 2020',
+    duration: 'Jan. - July 2020',
     pills: ['Jira', 'Confluence', 'Microsoft Office'],
     notes: [
       'Responsible for some very cool tasks at this place.',
@@ -36,7 +36,7 @@ export const experience = [
   {
     title: 'Jr. Frontend Developer',
     location: 'TD Bank',
-    duration: 'July - December 2019',
+    duration: 'July - Dec. 2019',
     pills: ['Angular', 'Node', 'Express'],
     notes: [
       'Responsible for some very cool tasks at this place.',
@@ -86,7 +86,7 @@ export const technical = {
 };
 
 export const soft = [
-  'Team Management & Optimization',
+  'Team Optimization',
   'Highly Adaptable',
   'Leadership',
   'Presenting',
