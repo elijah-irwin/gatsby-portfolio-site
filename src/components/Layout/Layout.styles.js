@@ -16,18 +16,11 @@ export const Body = styled.main`
 
 export const ThemeToggle = styled.div`
   display: none;
-  cursor: pointer;
 
   @media ${breaks.tablet} {
     display: block;
     position: fixed;
-    top: 10px;
-    right: 17px;
-    color: ${props => props.theme.color1};
-
-    & svg {
-      width: 40px;
-      height: 40px;
-    }
+    top: 20px;
+    right: 25px;
   }
 `;

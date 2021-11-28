@@ -57,7 +57,7 @@ const Work = () => {
           <SlideIn delay={isDesktop ? 300 : 0} flex>
             <ViewAllCard onClick={() => navigate('/projects')}>
               <div>
-                <Top>10+ projects</Top>
+                <Top>15+ projects</Top>
                 <Name>
                   View The
                   <br /> Archive

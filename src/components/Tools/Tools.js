@@ -31,7 +31,7 @@ const Tools = () => {
     { icon: <SiFirebase />, text: 'Firebase' },
     { icon: <FaGitAlt />, text: 'Git' },
     { icon: <FaFigma />, text: 'Figma' },
-    { icon: <FaAdobe />, text: 'Adobe XD' },
+    { icon: <FaAdobe />, text: 'XD' },
   ];
 
   return (

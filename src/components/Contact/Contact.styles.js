@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import { breaks } from '../../theme/breakPoints';
 
 export const Wrapper = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 
   @media ${breaks.tablet} {
     grid-template-columns: 3fr 2fr;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 `;
 

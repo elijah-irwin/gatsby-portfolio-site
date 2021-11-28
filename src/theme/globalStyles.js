@@ -57,4 +57,9 @@ export const GlobalStyles = createGlobalStyle`
   ol, ul {
     list-style: none;
   }
+  
+  .fixedBody {
+    position: fixed;
+    overflow-y: hidden;
+  }
 `;

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { FiMenu, FiToggleLeft, FiToggleRight, FiX } from 'react-icons/fi';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 // Components
 import Socials from '../../../theme/Socials/Socials';
@@ -25,7 +26,10 @@ const MobileNav = () => {
   const [open, setOpen] = useState(false);
   const { darkTheme, toggleTheme } = useContext(AppContext);
 
-  const menuHandler = () => setOpen(prev => !prev);
+  const menuHandler = () => {
+    document.body.classList.toggle('fixedBody');
+    setOpen(prev => !prev);
+  };
 
   return (
     <>
@@ -36,7 +40,11 @@ const MobileNav = () => {
           </Menu>
           <Mak>mak</Mak>
           <ThemeToggle onClick={toggleTheme}>
-            {darkTheme ? <FiToggleRight /> : <FiToggleLeft />}
+            <DarkModeSwitch
+              checked={darkTheme}
+              onChange={toggleTheme}
+              size={28}
+            />
           </ThemeToggle>
         </NavItems>
       </Nav>

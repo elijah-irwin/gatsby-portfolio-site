@@ -6,6 +6,8 @@ const Styles = styled(Link)`
   color: ${props => props.theme.text.accent};
   padding: 0px 5px 5px;
   font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: lowercase;
   position: relative;
 
   &:after {

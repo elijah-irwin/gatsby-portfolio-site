@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { FiToggleLeft, FiToggleRight } from 'react-icons/fi';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 // Contexts
 import { AppContext } from '../../contexts/AppContext';
@@ -25,8 +25,9 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={darkTheme ? dark : light}>
       <GlobalStyles />
       <Navbar />
+
       <ThemeToggle onClick={toggleTheme}>
-        {darkTheme ? <FiToggleRight /> : <FiToggleLeft />}
+        <DarkModeSwitch checked={darkTheme} onChange={toggleTheme} size={30} />
       </ThemeToggle>
       <Body>{children}</Body>
     </ThemeProvider>

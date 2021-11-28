@@ -36,10 +36,18 @@ export const Text = styled.div`
 `;
 
 export const MagicHeadshot = styled(Headshot)`
-  display: none;
+  display: flex;
+  order: -1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  @media ${breaks.tablet} {
+    display: none;
+  }
 
   @media ${breaks.laptop} {
     display: flex;
+    order: 1;
   }
 `;
 

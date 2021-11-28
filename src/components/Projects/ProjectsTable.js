@@ -109,7 +109,7 @@ const ProjectsTable = () => {
       <Grid>
         {/* <Fade bottom> */}
         <Header>year</Header>
-        <Header>name</Header>
+        <Header>project</Header>
         {isMobile && <Header>made at</Header>}
         {isLaptop && <Header>built with</Header>}
         <Header>links</Header>
@@ -128,18 +128,24 @@ const ProjectsTable = () => {
               </BuiltWith>
             )}
             <Links>
-              <a
-                href={project.links.demo}
-                target='_blank'
-                rel='noopener noreferrer'>
-                <Link />
-              </a>
-              <a
-                href={project.links.github}
-                target='_blank'
-                rel='noopener noreferrer'>
-                <GitHub />
-              </a>
+              {project.links.demo && (
+                <a
+                  href={project.links.demo}
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  <Link />
+                </a>
+              )}
+              {project.links.github && (
+                <a
+                  href={project.links.github}
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  <GitHub />
+                </a>
+              )}
+
+              {!project.links.demo && !project.links.github && '-'}
             </Links>
           </>
         ))}

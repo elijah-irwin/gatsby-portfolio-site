@@ -2,12 +2,10 @@ import styled from 'styled-components';
 import { breaks } from '../../theme/breakPoints';
 
 export const Wrapper = styled.div`
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 10px;
 
   @media ${breaks.tablet} {
     padding-top: 150px;
-    padding-bottom: 200px;
   }
 `;
 
@@ -17,4 +15,11 @@ export const Inline = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 80px;
+`;
+
+export const LinkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 `;

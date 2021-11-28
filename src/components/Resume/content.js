@@ -3,7 +3,7 @@ export const experience = [
     title: 'Technical Lead',
     location: 'TD Securities',
     duration: 'Jan. 2021 - Pres.',
-    pills: ['React', 'Node', 'Express', 'MongoDB'],
+    pills: ['React', 'Glue42', 'Express', 'Mongo'],
     notes: [
       'Responsible for some very cool tasks at this place.',
       'Responsible for some very cool tasks at this place.',
@@ -14,7 +14,7 @@ export const experience = [
     title: 'Fullstack Developer',
     location: 'TD Securities',
     duration: 'Jul. - Dec. 2020',
-    pills: ['React', 'Node', 'Express', 'MongoDB'],
+    pills: ['React', 'Node', 'Express', 'Mongo'],
     notes: [
       'Responsible for some very cool tasks at this place.',
       'Responsible for some very cool tasks at this place.',
@@ -34,10 +34,21 @@ export const experience = [
     ],
   },
   {
-    title: 'Jr. Frontend Developer',
+    title: 'Jr. Fullstack Developer',
     location: 'TD Bank',
     duration: 'July - Dec. 2019',
-    pills: ['Angular', 'Node', 'Express'],
+    pills: ['Angular', 'Express', 'SQL'],
+    notes: [
+      'Responsible for some very cool tasks at this place.',
+      'Responsible for some very cool tasks at this place.',
+      'Responsible for some very cool tasks at this place.',
+    ],
+  },
+  {
+    title: 'Jr. Frontend Developer',
+    location: 'TD Securities',
+    duration: 'Jan - June. 2019',
+    pills: ['React', 'Angular', 'Express'],
     notes: [
       'Responsible for some very cool tasks at this place.',
       'Responsible for some very cool tasks at this place.',
@@ -70,6 +81,7 @@ export const technical = {
     'Express',
     'MongoDB',
     'Firebase',
+    'SQL',
   ],
   tools: [
     'Figma',
@@ -97,6 +109,6 @@ export const interests = [
   '🤖 Robotics',
   '🚀 Space Exploration',
   '🏛️ Architecture',
-  '🕹️ Video Games',
+  '🕹️ Gaming',
   '💪 Fitness',
 ];

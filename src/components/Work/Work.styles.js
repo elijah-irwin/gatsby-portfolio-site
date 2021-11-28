@@ -4,7 +4,9 @@ import { breaks } from '../../theme/breakPoints';
 const gap = '20px;';
 
 export const Wrapper = styled.div`
-  padding-top: 75px;
+  @media ${breaks.tablet} {
+    padding-top: 75px;
+  }
 `;
 
 export const ViewAllCard = styled.div`

@@ -44,11 +44,6 @@ export const ThemeToggle = styled.div`
   display: flex;
   align-items: center;
   z-index: 101;
-
-  & svg {
-    width: 40px;
-    height: 40px;
-  }
 `;
 
 export const Drawer = styled.div`
@@ -72,8 +67,8 @@ export const Top = styled.div`
 `;
 
 export const Items = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 10fr 1fr;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
