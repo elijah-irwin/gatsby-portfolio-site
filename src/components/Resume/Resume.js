@@ -22,7 +22,7 @@ const Wrap = styled.div`
 `;
 
 const Grid = styled.div`
-  margin-top: 60px;
+  margin-top: 50px;
   display: grid;
 
   @media ${breaks.laptop} {

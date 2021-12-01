@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { FiMenu, FiToggleLeft, FiToggleRight, FiX } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
