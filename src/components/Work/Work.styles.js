@@ -58,7 +58,7 @@ export const Icon = styled.div`
 
 export const Top = styled.div`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   align-items: center;
 
   font-weight: 600;

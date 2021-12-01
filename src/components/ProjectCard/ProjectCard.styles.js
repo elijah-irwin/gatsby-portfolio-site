@@ -15,7 +15,8 @@ export const Wrapper = styled.div`
 export const Top = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 30px;
 
   & h3 {
     font-weight: 600;
@@ -33,7 +34,8 @@ export const Links = styled.div`
   & a {
     text-decoration: none;
     color: ${p => (p.dark ? p.theme.text.color : p.theme.white)};
-    margin-left: 20px;
+    margin-left: 17px;
+    display: flex;
   }
 
   & svg {

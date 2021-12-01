@@ -12,14 +12,14 @@ const ProjectCard = ({ project }) => {
           {project.tags[0]} / {project.tags[1]}
         </h3>
         <Links>
-          {project.demo && (
-            <a href={project.demo} target='_blank' rel='noopener noreferrer'>
-              <Link />
-            </a>
-          )}
           {project.github && (
             <a href={project.github} target='_blank' rel='noopener noreferrer'>
               <GitHub />
+            </a>
+          )}
+          {project.demo && (
+            <a href={project.demo} target='_blank' rel='noopener noreferrer'>
+              <Link />
             </a>
           )}
         </Links>
