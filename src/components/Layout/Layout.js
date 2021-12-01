@@ -27,7 +27,12 @@ const Layout = ({ children }) => {
       <Navbar />
 
       <ThemeToggle onClick={toggleTheme}>
-        <DarkModeSwitch checked={darkTheme} onChange={toggleTheme} size={30} />
+        <DarkModeSwitch
+          checked={darkTheme}
+          onChange={toggleTheme}
+          size={30}
+          sunColor='#6E6CD7'
+        />
       </ThemeToggle>
       <Body>{children}</Body>
     </ThemeProvider>

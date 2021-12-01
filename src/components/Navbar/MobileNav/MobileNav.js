@@ -44,6 +44,7 @@ const MobileNav = () => {
               checked={darkTheme}
               onChange={toggleTheme}
               size={28}
+              sunColor='#6E6CD7'
             />
           </ThemeToggle>
         </NavItems>

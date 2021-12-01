@@ -2,7 +2,7 @@ import rMr from '../../assets/rate-my-rotation.png';
 
 export const projects = {
   rateMyRotation: {
-    title: 'RateMyRotation',
+    title: 'Rate My Rotation',
     description:
       'Aims to provide the associates with more information when selecting a rotation to ensure it will be a good experience!',
     github: 'https://rate-my-rotation.firebaseapp.com/',

@@ -77,6 +77,7 @@ const BulletIcon = styled.div`
   display: flex;
   align-items: center;
   margin-right: 15px;
+  margin-left: 5px;
 
   & svg {
     stroke: ${p => p.theme.color1};

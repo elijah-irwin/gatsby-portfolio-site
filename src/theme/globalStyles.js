@@ -59,7 +59,6 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   .fixedBody {
-    position: fixed;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 `;

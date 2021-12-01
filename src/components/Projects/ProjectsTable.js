@@ -40,8 +40,8 @@ const ProjectsTable = () => {
           {isLaptop && <Header>built with</Header>}
           <Header>links</Header>
 
-          {projectData.map(project => (
-            <>
+          {projectData.map((project, i) => (
+            <React.Fragment key={i}>
               <Year>{project.year}</Year>
               <Name>{project.name}</Name>
               {isMobile && <MadeAt>{project.madeAt}</MadeAt>}
@@ -70,7 +70,7 @@ const ProjectsTable = () => {
                   </a>
                 )}
               </Links>
-            </>
+            </React.Fragment>
           ))}
         </Grid>
       </Fade>

@@ -5,9 +5,10 @@ export const experience = [
     duration: 'Jan. 2021 - Pres.',
     pills: ['React', 'Glue42', 'Express', 'Mongo'],
     notes: [
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
+      'Responsible for architecting and overseeing core technical solutions.',
+      "Manage & mentor the team's developers, associates, and co-ops.",
+      'Continuously establish and refine best practices within the team to improve code quality, design, and simplicity.',
+      'Organize and lead collaborative development projects across multiple teams.',
     ],
   },
   {
@@ -28,9 +29,9 @@ export const experience = [
     duration: 'Jan. - July 2020',
     pills: ['Jira', 'Confluence', 'Microsoft Office'],
     notes: [
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
+      'Worked directly with the business to establish & derive technical requirements.',
+      'Analyzed post-sprint metrics to identify and recommend areas of improvement in the development workflow.',
+      'Constructed & maintained agile development plans via Jira.',
     ],
   },
   {
