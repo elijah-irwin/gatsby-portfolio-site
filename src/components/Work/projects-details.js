@@ -15,7 +15,7 @@ export const projects = {
     title: 'Chat Me',
     description:
       'A simple real-time messaging application with support for multiple chat rooms.',
-    github: 'https://rate-my-rotation.firebaseapp.com/',
+    github: 'https://github.com/irwinmck/rate-my-rotation',
     demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
     tags: ['React', 'Node', 'Socket.io'],
