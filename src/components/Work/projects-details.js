@@ -25,8 +25,8 @@ export const projects = {
     title: 'My Mechs',
     description:
       'A mock e-commerce site build from scratch as a learning project. Includes searching, pagination, and checkout with PayPal integration.',
-    github: 'https://rate-my-rotation.firebaseapp.com/',
-    demo: 'https://rate-my-rotation.firebaseapp.com/',
+    github: 'https://github.com/irwinmck/e-comm-site',
+    demo: 'https://maks-custom-keys.herokuapp.com/',
     bgImage: rMr,
     tags: ['React', 'Node', 'Redux'],
   },
