@@ -5,7 +5,7 @@ export const projects = {
     title: 'Rate My Rotation',
     description:
       'A review platform akin to RateMyProfessors which aims to provide TD associates & co-ops finer details about potential future roles.',
-    github: 'https://rate-my-rotation.firebaseapp.com/',
+    github: 'https://github.com/irwinmck/rate-my-rotation',
     demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
     tags: ['React', 'Firebase'],
