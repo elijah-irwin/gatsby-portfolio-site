@@ -5,7 +5,7 @@ export const experience = [
     duration: 'Jan. 2021 - Pres.',
     pills: ['React', 'Glue42', 'Express', 'Mongo'],
     notes: [
-      'Responsible for architecting and overseeing core technical solutions.',
+      'Responsible for architecting, implementing, and overseeing core technical solutions.',
       "Manage & mentor the team's developers, associates, and co-ops.",
       'Continuously establish and refine best practices within the team to improve code quality, design, and simplicity.',
       'Organize and lead collaborative development projects across multiple teams.',
@@ -17,9 +17,10 @@ export const experience = [
     duration: 'Jul. - Dec. 2020',
     pills: ['React', 'Node', 'Express', 'Mongo'],
     notes: [
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
+      "Developed the web service & DB utilized by our team's flagship application.",
+      "Refactored and simplified our flagship's client to utilize modern React tools such as functional components, hooks, and contexts.",
+      'Developed a React app-starter with authentication & theming for teams to quick-start projects (used by 20+ internal apps).',
+      'Designed and implemented key UI components to our flagship and app-starter projects.',
     ],
   },
   {
@@ -29,7 +30,7 @@ export const experience = [
     duration: 'Jan. - July 2020',
     pills: ['Jira', 'Confluence', 'Microsoft Office'],
     notes: [
-      'Worked directly with the business to establish & derive technical requirements.',
+      'Worked directly with the business to derive & establish technical requirements.',
       'Analyzed post-sprint metrics to identify and recommend areas of improvement in the development workflow.',
       'Constructed & maintained agile development plans via Jira.',
     ],
@@ -40,9 +41,9 @@ export const experience = [
     duration: 'July - Dec. 2019',
     pills: ['Angular', 'Express', 'SQL'],
     notes: [
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
+      'Developed and integrated various API functionality with the UI such as filtering and updating of user applications.',
+      'Provided proper testing coverage through unit and snapshot testing with Jest.',
+      'Learned and utilized agile software development best practices.',
     ],
   },
   {
@@ -51,9 +52,9 @@ export const experience = [
     duration: 'Jan - June. 2019',
     pills: ['React', 'Angular', 'Express'],
     notes: [
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
-      'Responsible for some very cool tasks at this place.',
+      'Created real-time graphs & charts to visually convey upcoming and past trade details.',
+      'Significantly improved application performance via custom webpack optimizations such as caching & code splitting.',
+      'Developed admin tools to manage product details for precious metals.',
     ],
   },
 ];
@@ -93,7 +94,6 @@ export const technical = {
     'Jira',
     'Confluence',
     'Trello',
-    'CircleCI',
     'Jenkins',
   ],
 };

@@ -4,7 +4,7 @@ export const projects = {
   rateMyRotation: {
     title: 'Rate My Rotation',
     description:
-      'Aims to provide the associates with more information when selecting a rotation to ensure it will be a good experience!',
+      'A review platform akin to RateMyProfessors which aims to provide TD associates & co-ops finer details about potential future roles.',
     github: 'https://rate-my-rotation.firebaseapp.com/',
     demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
@@ -24,19 +24,10 @@ export const projects = {
   eComm: {
     title: 'My Mechs',
     description:
-      'Mock e-commerce site build from scratch as a learning project. Contains searching, pagination, and checkout with PayPal integration.',
+      'A mock e-commerce site build from scratch as a learning project. Includes searching, pagination, and checkout with PayPal integration.',
     github: 'https://rate-my-rotation.firebaseapp.com/',
     demo: 'https://rate-my-rotation.firebaseapp.com/',
     bgImage: rMr,
     tags: ['React', 'Node', 'Redux'],
-  },
-
-  tbd: {
-    title: 'Supa Dope Project',
-    description: 'Amazing really, never before seen ideas here. Amazing.',
-    github: 'https://rate-my-rotation.firebaseapp.com/',
-    demo: 'https://rate-my-rotation.firebaseapp.com/',
-    bgImage: rMr,
-    tags: ['React', 'Express'],
   },
 };

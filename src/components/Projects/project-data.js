@@ -101,7 +101,7 @@ export const projectData = [
   },
   {
     year: 2019,
-    name: 'Business Banking',
+    name: 'UAO',
     madeAt: 'TD Bank',
     builtWith: ['Angular', 'Node', 'SQL'],
     links: {},
