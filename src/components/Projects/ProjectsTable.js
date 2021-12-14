@@ -2,18 +2,16 @@ import React from 'react';
 import { GitHub, Link } from 'react-feather';
 import Fade from 'react-reveal/Fade';
 
-// Hooks
-import { usePageWidth } from '../../hooks/usePageWidth';
-
 // Data
 import { projectData } from './project-data';
 
 // Styles
-import { sizeNumber } from '../../theme/breakPoints';
 import {
   Wrap,
   Grid,
   Header,
+  MobileHeader,
+  LaptopHeader,
   Year,
   Name,
   MadeAt,
@@ -26,32 +24,26 @@ import {
  * - ProjectsTable.js -
  ******************************/
 const ProjectsTable = () => {
-  const width = usePageWidth();
-  const isLaptop = width >= sizeNumber.laptop;
-  const isMobile = width >= sizeNumber.mobileL;
-
   return (
     <Wrap>
       <Fade bottom distance='100px'>
         <Grid>
-          {isMobile && <Header>year</Header>}
+          <MobileHeader>year</MobileHeader>
           <Header>project</Header>
-          {isMobile && <Header>made at</Header>}
-          {isLaptop && <Header>built with</Header>}
+          <MobileHeader>made at</MobileHeader>
+          <LaptopHeader>built with</LaptopHeader>
           <Header>links</Header>
 
           {projectData.map((project, i) => (
             <React.Fragment key={i}>
-              {isMobile && <Year>{project.year}</Year>}
+              <Year>{project.year}</Year>
               <Name>{project.name}</Name>
-              {isMobile && <MadeAt>{project.madeAt}</MadeAt>}
-              {isLaptop && (
-                <BuiltWith>
-                  {project.builtWith.map(tool => (
-                    <Tool key={tool}>{tool}</Tool>
-                  ))}
-                </BuiltWith>
-              )}
+              <MadeAt>{project.madeAt}</MadeAt>
+              <BuiltWith>
+                {project.builtWith.map(tool => (
+                  <Tool key={tool}>{tool}</Tool>
+                ))}
+              </BuiltWith>
               <Links>
                 {project.links.github && (
                   <a

@@ -35,10 +35,33 @@ export const Header = styled.div`
   font-weight: 600;
 `;
 
+export const MobileHeader = styled.div`
+  display: none;
+
+  @media ${breaks.mobileL} {
+    font-weight: 600;
+    display: block;
+  }
+`;
+
+export const LaptopHeader = styled.div`
+  display: none;
+
+  @media ${breaks.laptop} {
+    font-weight: 600;
+    display: block;
+  }
+`;
+
 export const Year = styled.div`
-  color: ${p => p.theme.color1};
-  font-size: 1.3rem;
-  font-family: 'Roboto Mono', sans-serif;
+  display: none;
+
+  @media ${breaks.mobileL} {
+    color: ${p => p.theme.color1};
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', sans-serif;
+    display: block;
+  }
 `;
 
 export const Name = styled.div`
@@ -48,12 +71,21 @@ export const Name = styled.div`
 `;
 
 export const MadeAt = styled.div`
-  font-size: 1.2rem;
+  display: none;
+
+  @media ${breaks.mobileL} {
+    font-size: 1.2rem;
+    display: block;
+  }
 `;
 
 export const BuiltWith = styled.div`
-  font-size: 1rem;
-  display: flex;
+  display: none;
+
+  @media ${breaks.laptop} {
+    font-size: 1rem;
+    display: flex;
+  }
 `;
 
 export const Tool = styled.div`

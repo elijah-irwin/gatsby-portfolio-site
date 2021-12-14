@@ -25,15 +25,14 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: [
-            'Nunito Sans:300,400,600,700',
-            'Caveat:400,500,600',
-            'Roboto Mono:400,500',
-          ],
-        },
+        fonts: [
+          `Nunito Sans\:300,400,600,700`,
+          `Caveat\:400,500,600`,
+          `Roboto Mono\:400,500`,
+        ],
+        display: 'block',
       },
     },
   ],
