@@ -7,7 +7,7 @@ const themeKey = 'mak-theme';
 const init_state = {
   darkTheme: localStorage.getItem(themeKey)
     ? JSON.parse(localStorage.getItem(themeKey))
-    : true,
+    : false,
 };
 
 // Create the context and export AppContext for consumption by other components.
