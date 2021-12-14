@@ -1,11 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export const usePageWidth = () => {
-  const [pageWidth, setPageWidth] = useState(window.innerWidth);
+  const [pageWidth, setPageWidth] = useState(() => {
+    if (typeof window !== 'undefined') return window.innerHeight;
+    else return 1920;
+  });
 
   useEffect(() => {
     window.addEventListener('resize', () => setPageWidth(window.innerWidth));
-    return () => window.removeEventListener('resize', () => setPageWidth(window.innerWidth));
+    return () =>
+      window.removeEventListener('resize', () =>
+        setPageWidth(window.innerWidth)
+      );
   }, []);
 
   return pageWidth;
