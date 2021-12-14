@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breaks } from '../../../theme/breakPoints';
 
 export const Nav = styled.nav`
   position: sticky;
@@ -6,6 +7,10 @@ export const Nav = styled.nav`
   background-color: ${p => p.theme.main.bgColor};
   width: 100%;
   z-index: 1;
+
+  @media ${breaks.tablet} {
+    display: none;
+  }
 `;
 
 export const NavItems = styled.div`

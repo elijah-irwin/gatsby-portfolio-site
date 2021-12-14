@@ -16,12 +16,7 @@ module.exports = {
         icon: `src/assets/logo.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/index/`, `/projects/`, `/resume/`],
-      },
-    },
+    `gatsby-plugin-remove-serviceworker`,
     'gatsby-plugin-styled-components',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

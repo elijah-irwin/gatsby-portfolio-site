@@ -1,14 +1,19 @@
 import styled from 'styled-components';
+import { breaks } from '../../../theme/breakPoints';
 
 export const Nav = styled.nav`
-  color: ${p => p.theme.white};
-  position: fixed;
-  height: 100vh;
-  width: 9rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  background-color: ${props => props.theme.sidenav.bgColor};
-  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.25);
+  display: none;
+
+  @media ${breaks.tablet} {
+    display: grid;
+    color: ${p => p.theme.white};
+    position: fixed;
+    height: 100vh;
+    width: 9rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: ${props => props.theme.sidenav.bgColor};
+    box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 export const Mak = styled.div`

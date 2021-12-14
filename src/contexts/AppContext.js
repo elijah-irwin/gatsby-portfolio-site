@@ -1,14 +1,10 @@
 import React from 'react';
+import { isBrowser } from '../utils/browserUtils';
 
 // LocalStorage Keys
 const themeKey = 'mak-theme';
 
-// Helper browser fnc.
-const isBrowser = () => {
-  console.log('isBrowser');
-  return typeof window !== 'undefined';
-};
-
+// Initial State.
 const init_state = {
   darkTheme: isBrowser()
     ? JSON.parse(localStorage.getItem(themeKey) || 'false')
