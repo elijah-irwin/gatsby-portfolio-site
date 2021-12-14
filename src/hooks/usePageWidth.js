@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export const usePageWidth = () => {
   const [pageWidth, setPageWidth] = useState(() => {
     if (typeof window !== 'undefined') return window.innerWidth;
-    else return 1920;
+    else return 767;
   });
 
   useEffect(() => {
