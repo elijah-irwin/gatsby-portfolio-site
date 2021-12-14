@@ -69,12 +69,11 @@ export const education = {
 
 export const technical = {
   code: [
-    'HTML',
-    'CSS',
-    'Sass',
+    'React',
     'Javascript',
     'Typescript',
-    'React',
+    'Sass',
+    'Styled-Components',
     'Redux',
     'Webpack',
     'Gatsby',

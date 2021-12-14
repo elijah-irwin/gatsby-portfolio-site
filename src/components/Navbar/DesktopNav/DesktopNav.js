@@ -23,7 +23,7 @@ const DesktopNav = () => (
         <AnchorLink to='/#contact' title='.contact' stripHash />
       </li>
       <li>
-        <AnchorLink to='/resume' title='.resume' stripHash />
+        <AnchorLink to='/resume/' title='.resume' stripHash />
       </li>
     </Links>
     <Bottom>

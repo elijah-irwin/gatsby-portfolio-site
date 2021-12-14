@@ -51,12 +51,12 @@ const ArchiveLinks = () => {
   return (
     <Wrap>
       <LinkWrap>
-        <StyledLink to='/projects' activeClassName='active'>
+        <StyledLink to='/projects/' activeClassName='active'>
           projects
         </StyledLink>
       </LinkWrap>
       <LinkWrap>
-        <StyledLink to='/resume' activeClassName='active'>
+        <StyledLink to='/resume/' activeClassName='active'>
           resume
         </StyledLink>
       </LinkWrap>

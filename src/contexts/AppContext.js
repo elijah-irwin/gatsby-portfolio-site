@@ -6,25 +6,18 @@ const themeKey = 'mak-theme';
 // Helper browser fnc.
 const isBrowser = () => typeof window !== 'undefined';
 
-// Initial App State
-const init_state = () => {
-  const state = { darkTheme: false };
-
-  if (!isBrowser()) return state;
-
-  const theme = JSON.parse(localStorage.getItem(themeKey) || 'false');
-  state.darkTheme = theme;
-  return state;
-};
-
 // Create the context and export AppContext for consumption by other components.
-export const AppContext = React.createContext(init_state);
+export const AppContext = React.createContext(null);
 
 // AppProvider: Wrapper component which manages the app's state.
 // Consumed by gatsby-browser.js.
 export const AppProvider = ({ children }) => {
   // Context state.
-  const [state, setState] = React.useState(init_state);
+  const [state, setState] = React.useState(() => {
+    if (!isBrowser()) return { darkTheme: false };
+    const theme = JSON.parse(localStorage.getItem(themeKey) || 'false');
+    return { darkTheme: theme };
+  });
 
   // Helper fnc to update the state while retaining old values.
   const updateState = arg => setState({ ...state, ...arg });
