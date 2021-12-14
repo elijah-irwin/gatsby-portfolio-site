@@ -5,9 +5,7 @@ const themeKey = 'mak-theme';
 
 // Initial App State
 const init_state = {
-  darkTheme: localStorage.getItem(themeKey)
-    ? JSON.parse(localStorage.getItem(themeKey))
-    : false,
+  darkTheme: true,
 };
 
 // Create the context and export AppContext for consumption by other components.
@@ -24,7 +22,6 @@ export const AppProvider = ({ children }) => {
 
   // Fnc to toggle the theme.
   const toggleTheme = () => {
-    localStorage.setItem(themeKey, !state.darkTheme);
     updateState({ darkTheme: !state.darkTheme });
   };
 
