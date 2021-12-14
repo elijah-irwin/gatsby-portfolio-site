@@ -6,9 +6,10 @@ const themeKey = 'mak-theme';
 
 // Initial State.
 const init_state = {
-  darkTheme: isBrowser()
-    ? JSON.parse(localStorage.getItem(themeKey) || 'false')
-    : false,
+  // darkTheme: isBrowser()
+  //   ? JSON.parse(localStorage.getItem(themeKey) || 'false')
+  //   : false,
+  darkTheme: false,
 };
 
 // Create the context and export AppContext for consumption by other components.
@@ -25,7 +26,7 @@ export const AppProvider = ({ children }) => {
 
   // Fnc to toggle the theme.
   const toggleTheme = () => {
-    if (isBrowser()) localStorage.setItem(themeKey, !state.darkTheme);
+    // if (isBrowser()) localStorage.setItem(themeKey, !state.darkTheme);
     updateState({ darkTheme: !state.darkTheme });
   };
 
