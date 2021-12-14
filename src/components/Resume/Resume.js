@@ -70,7 +70,7 @@ const Resume = () => {
       <Header text='.archive' />
       <ArchiveLinks />
       <Grid>
-        <div>
+        <div style={{ marginBottom: '30px' }}>
           <SlideIn>
             <SubHeader>.experience</SubHeader>
             {experience.map(entry => (

@@ -1,14 +1,7 @@
 import React from 'react';
 import { DiMongodb } from 'react-icons/di';
-import { SiFirebase, SiGatsby, SiTypescript } from 'react-icons/si';
-import {
-  FaReact,
-  FaSass,
-  FaNodeJs,
-  FaGitAlt,
-  FaFigma,
-  FaAdobe,
-} from 'react-icons/fa';
+import { SiFirebase, SiGatsby, SiTypescript, SiAdobexd } from 'react-icons/si';
+import { FaReact, FaSass, FaNodeJs, FaGitAlt, FaFigma } from 'react-icons/fa';
 
 // Components
 import Header from '../../theme/Header/Header';
@@ -31,7 +24,7 @@ const Tools = () => {
     { icon: <SiFirebase />, text: 'Firebase' },
     { icon: <FaGitAlt />, text: 'Git' },
     { icon: <FaFigma />, text: 'Figma' },
-    { icon: <FaAdobe />, text: 'XD' },
+    { icon: <SiAdobexd />, text: 'Adobe Xd' },
   ];
 
   return (

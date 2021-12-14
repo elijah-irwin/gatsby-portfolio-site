@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { Helmet } from 'react-helmet';
 
 // Contexts
 import { AppContext } from '../../contexts/AppContext';
@@ -23,6 +24,9 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={darkTheme ? dark : light}>
+      <Helmet>
+        <title>Mak Irwin</title>
+      </Helmet>
       <GlobalStyles />
       <Navbar />
 
@@ -31,7 +35,7 @@ const Layout = ({ children }) => {
           checked={darkTheme}
           onChange={toggleTheme}
           size={30}
-          sunColor='#6E6CD7'
+          sunColor='#373737'
         />
       </ThemeToggle>
       <Body>{children}</Body>

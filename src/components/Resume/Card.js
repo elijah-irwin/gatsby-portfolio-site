@@ -62,7 +62,7 @@ const Bullets = styled.ul`
 const Flex = styled.div`
   display: flex;
   margin: 10px 0px;
-  color: ${p => p.theme.text.header};
+  color: ${p => p.theme.text.color};
 
   :first-child {
     margin-top: 0px;

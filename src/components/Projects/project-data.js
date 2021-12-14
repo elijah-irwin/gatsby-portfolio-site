@@ -38,7 +38,7 @@ export const projectData = [
   },
   {
     year: 2021,
-    name: 'Chat Me',
+    name: 'React Chat App',
     madeAt: '-',
     builtWith: ['React', 'Node', 'Socket.io'],
     links: {
@@ -81,9 +81,9 @@ export const projectData = [
   },
   {
     year: 2020,
-    name: 'Realtime Chat',
+    name: 'Simple Chat',
     madeAt: '-',
-    builtWith: ['JS', 'Node', 'Socket.io'],
+    builtWith: ['JS', 'EJS', 'Node', 'Socket.io'],
     links: {
       demo: 'https://irwinmck-realtime-chat-app.herokuapp.com/',
       github: 'https://github.com/irwinmck/realtime-chat-app',

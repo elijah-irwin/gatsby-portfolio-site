@@ -17,7 +17,7 @@ export const dark = {
   buttonText: '#E1E1E1',
 
   text: {
-    color: '#949494',
+    color: '#b1b1b1',
     header: 'whitesmoke',
     accent: mainColor,
   },
