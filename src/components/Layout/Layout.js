@@ -21,6 +21,7 @@ import { Body, ThemeToggle } from './Layout.styles';
  *********************************************************/
 const Layout = ({ children }) => {
   const { darkTheme, toggleTheme } = React.useContext(AppContext);
+  console.log(darkTheme);
 
   return (
     <ThemeProvider theme={darkTheme ? dark : light}>

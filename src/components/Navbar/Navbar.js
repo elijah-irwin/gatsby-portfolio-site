@@ -17,7 +17,7 @@ import { usePageWidth } from '../../hooks/usePageWidth';
  *************************************************/
 const Navbar = () => {
   const pageWidth = usePageWidth();
-  return pageWidth < sizeNumber.tablet ? <MobileNav /> : <DesktopNav />;
+  return pageWidth > sizeNumber.tablet ? <DesktopNav /> : <MobileNav />;
 };
 
 export default Navbar;

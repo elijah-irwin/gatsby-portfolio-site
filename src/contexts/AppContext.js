@@ -4,7 +4,10 @@ import React from 'react';
 const themeKey = 'mak-theme';
 
 // Helper browser fnc.
-const isBrowser = () => typeof window !== 'undefined';
+const isBrowser = () => {
+  console.log('isBrowser');
+  return typeof window !== 'undefined';
+};
 
 const init_state = {
   darkTheme: isBrowser()
