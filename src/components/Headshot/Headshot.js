@@ -17,6 +17,7 @@ const Headshot = ({ className }) => {
         src='../../assets/head-shot.jpg'
         alt='head shot'
         className={darkTheme ? 'dark' : 'light'}
+        imgStyle={{ borderRadius: '50%' }}
         width={270}
         quality={100}
       />
