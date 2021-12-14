@@ -14,7 +14,7 @@ export const Wrap = styled.div`
 export const Grid = styled.div`
   display: grid;
   gap: 25px 25px;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   font-size: 1.7rem;
 
   @media ${breaks.mobileL} {
