@@ -10,9 +10,6 @@ import Header from '../../theme/Header/Header';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import SlideIn from '../../animations/SlideIn';
 
-// Hooks
-import { usePageWidth } from '../../hooks/usePageWidth';
-
 // Styles
 import {
   Wrapper,
@@ -24,13 +21,8 @@ import {
   Name,
   Icon,
 } from './Work.styles';
-import { sizeNumber } from '../../theme/breakPoints';
 
 const Work = () => {
-  const width = usePageWidth();
-  const isTablet = width > sizeNumber.tablet;
-  const isDesktop = width > sizeNumber.laptop;
-
   return (
     <Wrapper id='work'>
       <SlideIn flex>
@@ -42,19 +34,17 @@ const Work = () => {
           <SlideIn flex>
             <ProjectCard project={projects.rateMyRotation} />
           </SlideIn>
-          <SlideIn delay={isDesktop ? 300 : 0} flex>
+          <SlideIn flex>
             <ProjectCard project={projects.eComm} />
           </SlideIn>
         </Row1>
 
         <Row2>
-          {isTablet && (
-            <SlideIn flex>
-              <ProjectCard project={projects.chatApp} />
-            </SlideIn>
-          )}
+          <SlideIn flex>
+            <ProjectCard project={projects.chatApp} />
+          </SlideIn>
 
-          <SlideIn delay={isDesktop ? 300 : 0} flex>
+          <SlideIn flex>
             <ViewAllCard onClick={() => navigate('/projects/')}>
               <div>
                 <Top>15+ projects</Top>
