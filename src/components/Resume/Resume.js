@@ -75,6 +75,8 @@ const MobilePDF = styled(PdfButton)`
 `;
 
 const Resume = () => {
+  const delay = 400;
+
   return (
     <Wrap>
       <Header text='.archive' />
@@ -91,7 +93,7 @@ const Resume = () => {
         </div>
 
         <div>
-          <SlideIn delay={600}>
+          <SlideIn delay={delay}>
             <MarginBottom>
               <SubHeader>.education</SubHeader>
               <Card entry={education} />
@@ -123,7 +125,7 @@ const Resume = () => {
           </SlideIn>
         </div>
       </Grid>
-      <SlideIn delay={600}>
+      <SlideIn delay={delay}>
         <MobilePDF />
       </SlideIn>
     </Wrap>

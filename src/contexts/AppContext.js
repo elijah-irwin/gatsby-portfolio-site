@@ -1,14 +1,7 @@
 import React from 'react';
-import { isBrowser } from '../utils/browserUtils';
-
-// LocalStorage Keys
-const themeKey = 'mak-theme';
 
 // Initial State.
 const init_state = {
-  // darkTheme: isBrowser()
-  //   ? JSON.parse(localStorage.getItem(themeKey) || 'false')
-  //   : false,
   darkTheme: false,
 };
 
@@ -26,7 +19,6 @@ export const AppProvider = ({ children }) => {
 
   // Fnc to toggle the theme.
   const toggleTheme = () => {
-    // if (isBrowser()) localStorage.setItem(themeKey, !state.darkTheme);
     updateState({ darkTheme: !state.darkTheme });
   };
 
