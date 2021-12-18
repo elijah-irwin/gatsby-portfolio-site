@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { breaks } from '../../theme/breakPoints';
 
 export const Wrap = styled.div`
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
   @media ${breaks.mobileL} {
     margin-top: 60px;

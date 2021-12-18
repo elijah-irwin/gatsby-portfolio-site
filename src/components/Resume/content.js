@@ -8,7 +8,7 @@ export const experience = [
       'Responsible for architecting, implementing, and overseeing core technical solutions.',
       "Manage & mentor the team's developers, associates, and co-ops.",
       'Continuously establish and refine best practices within the team to improve code quality, design, and simplicity.',
-      'Organize and lead collaborative development projects across multiple teams.',
+      'Organize and lead collaborative development projects across multiple teams and 100+ apps.',
     ],
   },
   {
@@ -31,7 +31,7 @@ export const experience = [
     pills: ['Jira', 'Confluence', 'Microsoft Office'],
     notes: [
       'Worked directly with the business to derive & establish technical requirements.',
-      'Analyzed post-sprint metrics to identify and recommend areas of improvement in the development workflow.',
+      'Analyzed post-sprint metrics to identify and areas of improvement, resulting in a ~50% reduction of carry-over tickets.',
       'Constructed & maintained agile development plans via Jira.',
     ],
   },

@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { breaks } from '../breakPoints';
+
+import PdfButton from '../PdfButton/PdfButton';
 
 const Wrap = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const LinkWrap = styled.div`
@@ -47,7 +51,16 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const ArchiveLinks = () => {
+const ExtendedPdf = styled(PdfButton)`
+  display: none;
+  margin-left: auto;
+
+  @media ${breaks.mobileL} {
+    display: flex;
+  }
+`;
+
+const ArchiveLinks = ({ pdf }) => {
   return (
     <Wrap>
       <LinkWrap>
@@ -60,6 +73,8 @@ const ArchiveLinks = () => {
           resume
         </StyledLink>
       </LinkWrap>
+
+      {pdf && <ExtendedPdf />}
     </Wrap>
   );
 };

@@ -7,6 +7,7 @@ import ArchiveLinks from '../../theme/ArchiveLinks/ArchiveLinks';
 import Card from './Card';
 import TechnicalJots from './TechnicalJots';
 import SlideIn from '../../animations/SlideIn';
+import PdfButton from '../../theme/PdfButton/PdfButton';
 
 // Context
 import { experience, education, technical, soft, interests } from './content';
@@ -22,7 +23,7 @@ const Wrap = styled.div`
 `;
 
 const Grid = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   display: grid;
 
   @media ${breaks.laptop} {
@@ -64,11 +65,21 @@ const InterestItem = styled.div`
   color: ${p => p.theme.text.header};
 `;
 
+const MobilePDF = styled(PdfButton)`
+  flex-grow: 1;
+  margin-bottom: 60px;
+
+  @media ${breaks.mobileL} {
+    display: none;
+  }
+`;
+
 const Resume = () => {
   return (
     <Wrap>
       <Header text='.archive' />
-      <ArchiveLinks />
+      <ArchiveLinks pdf />
+
       <Grid>
         <div style={{ marginBottom: '30px' }}>
           <SlideIn>
@@ -112,6 +123,9 @@ const Resume = () => {
           </SlideIn>
         </div>
       </Grid>
+      <SlideIn delay={600}>
+        <MobilePDF />
+      </SlideIn>
     </Wrap>
   );
 };
