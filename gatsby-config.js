@@ -10,8 +10,6 @@ module.exports = {
         name: `Mak Irwin`,
         short_name: `Mak Irwin`,
         start_url: `/`,
-        background_color: `#dedfe1`,
-        theme_color: `#dedfe1`,
         display: `standalone`,
         icon: `src/assets/logo.png`,
       },
