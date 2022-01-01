@@ -62,7 +62,7 @@ const InterestItem = styled.div`
   flex-direction: column;
   gap: 10px 20px;
   font-size: 1.3rem;
-  color: ${p => p.theme.text.header};
+  color: ${p => p.theme.text.color};
 `;
 
 const MobilePDF = styled(PdfButton)`
@@ -103,6 +103,8 @@ const Resume = () => {
               <SubHeader>.technical</SubHeader>
               <TechnicalJots header='code' items={technical.code} />
               <TechnicalJots header='tools' items={technical.tools} />
+              <TechnicalJots header='systems' items={technical.systems} />
+              <TechnicalJots header='desire to learn' items={technical.learn} />
             </MarginBottom>
 
             <MarginBottom>

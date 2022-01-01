@@ -20,7 +20,7 @@ const Items = styled.div`
 const Item = styled.div`
   font-size: 1.1rem;
   letter-spacing: 0.8px;
-  color: ${p => p.theme.text.header};
+  color: ${p => p.theme.text.color};
 `;
 
 const Icon = styled.div`
@@ -33,6 +33,10 @@ const Icon = styled.div`
     fill: ${p => p.theme.color1};
   }
 `;
+
+// const Span = styled.span`
+//   color: ${p => p.theme.color1};
+// `;
 
 const TechnicalJots = ({ header, items }) => {
   return (
@@ -49,6 +53,14 @@ const TechnicalJots = ({ header, items }) => {
             )}
           </React.Fragment>
         ))}
+        {/* {items.map((item, i) => (
+          <React.Fragment key={i}>
+            <Item>
+              {item}
+              {i !== items.length - 1 && <Span>,&nbsp;</Span>}
+            </Item>
+          </React.Fragment>
+        ))} */}
       </Items>
     </Wrap>
   );

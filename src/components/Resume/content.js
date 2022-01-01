@@ -70,11 +70,11 @@ export const education = {
 export const technical = {
   code: [
     'React',
+    'Redux',
     'Javascript',
     'Typescript',
     'Sass',
-    'Styled-Components',
-    'Redux',
+    'Styled Components',
     'Webpack',
     'Gatsby',
     'Next',
@@ -95,6 +95,14 @@ export const technical = {
     'Trello',
     'Jenkins',
   ],
+  learn: [
+    'React Native',
+    'Blockchain',
+    'Artificial Intelligence',
+    'Docker',
+    'Vite',
+  ],
+  systems: ['Windows', 'MacOS', 'Linux'],
 };
 
 export const soft = [

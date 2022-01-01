@@ -17,7 +17,7 @@ const Landing = () => {
         <SectionDivider />
       </Fade>
       <Work />
-      <Fade bottom distance='100px' fraction={0.4}>
+      <Fade bottom distance='100px' fraction={0.3}>
         <SectionDivider style={{ marginTop: '60px' }} />
         <Tools />
         <SectionDivider />
