@@ -14,6 +14,21 @@ export const Body = styled.main`
   }
 `;
 
+export const Footer = styled.footer`
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+
+  @media ${breaks.tablet} {
+    margin-left: 9rem;
+    padding: 0px 100px;
+  }
+
+  @media ${breaks.laptopL} {
+    padding: 0px 350px;
+  }
+`;
+
 export const ThemeToggle = styled.div`
   display: none;
 

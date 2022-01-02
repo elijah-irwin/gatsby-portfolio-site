@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { breaks } from '../../theme/breakPoints';
 
 export const Wrapper = styled.div`
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 
   @media ${breaks.tablet} {
     grid-template-columns: 3fr 2fr;
@@ -26,7 +26,7 @@ export const P = styled.p`
 export const Options = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
 `;
 

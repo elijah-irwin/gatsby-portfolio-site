@@ -85,23 +85,18 @@ export const technical = {
     'SQL',
   ],
   tools: [
-    'Figma',
-    'Adobe XD',
+    'VS Code',
     'Git',
     'Bitbucket',
     'Github',
     'Jira',
+    'Figma',
+    'Adobe XD',
     'Confluence',
     'Trello',
     'Jenkins',
   ],
-  learn: [
-    'React Native',
-    'Blockchain',
-    'Artificial Intelligence',
-    'Docker',
-    'Vite',
-  ],
+  learn: ['React Native', 'Blockchain', 'AI', 'Docker', 'Vite'],
   systems: ['Windows', 'MacOS', 'Linux'],
 };
 

@@ -67,7 +67,7 @@ const InterestItem = styled.div`
 
 const MobilePDF = styled(PdfButton)`
   flex-grow: 1;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 
   @media ${breaks.mobileL} {
     display: none;

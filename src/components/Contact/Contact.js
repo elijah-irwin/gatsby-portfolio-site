@@ -22,8 +22,8 @@ const Contact = () => {
       <SlideIn>
         <Header text='.contact' />
         <P>
-          Have a question, proposal, or just want to say hello? Feel free to
-          reach out, I'd love to hear from you!
+          Learn about something new in tech recently? Working on a cool project?
+          I'd love to hear about it!
         </P>
         <Options>
           <div>
