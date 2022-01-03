@@ -26,7 +26,7 @@ const Work = () => {
   return (
     <Wrapper id='work'>
       <SlideIn flex>
-        <Header text='.work' />
+        <Header text='.projects' />
       </SlideIn>
 
       <Cards>
