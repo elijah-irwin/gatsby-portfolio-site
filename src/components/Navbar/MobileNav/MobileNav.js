@@ -69,7 +69,7 @@ const MobileNav = () => {
             <li>
               <AnchorLink
                 to='/#work'
-                title='.projects'
+                title='.work'
                 stripHash
                 onAnchorLinkClick={menuHandler}
               />
