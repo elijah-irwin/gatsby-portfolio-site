@@ -1,6 +1,16 @@
 export const projectData = [
   {
     year: 2022,
+    name: 'Crypto Gifs',
+    madeAt: '-',
+    builtWith: ['Solidity', 'React', 'TailwindCSS'],
+    links: {
+      demo: 'https://crypto-gifs.netlify.app/',
+      github: 'https://github.com/irwinmck/crypto-gifs',
+    },
+  },
+  {
+    year: 2022,
     name: 'Factory Docs',
     madeAt: 'TD Securities',
     builtWith: ['Gatsby', 'Sass', 'Node'],

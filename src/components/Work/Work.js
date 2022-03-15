@@ -32,16 +32,16 @@ const Work = () => {
       <Cards>
         <Row1>
           <SlideIn flex>
-            <ProjectCard project={projects.rateMyRotation} />
+            <ProjectCard project={projects.cryptoGifs} />
           </SlideIn>
           <SlideIn flex>
-            <ProjectCard project={projects.eComm} />
+            <ProjectCard project={projects.chatApp} />
           </SlideIn>
         </Row1>
 
         <Row2>
           <SlideIn flex>
-            <ProjectCard project={projects.chatApp} />
+            <ProjectCard project={projects.irwinClothing} />
           </SlideIn>
 
           <SlideIn flex>

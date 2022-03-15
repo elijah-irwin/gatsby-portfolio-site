@@ -1,4 +1,20 @@
 export const projects = {
+  irwinClothing: {
+    title: 'Irwin Clothing Co.',
+    description:
+      'A mock ecommerce platform built using React, Redux, and Firebase. Includes integration with the Stripe Payments API.',
+    github: 'https://github.com/irwinmck/stripe-ecomm',
+    demo: 'https://stripe-ecomm.herokuapp.com/',
+    tags: ['React', 'Firebase'],
+  },
+  cryptoGifs: {
+    title: 'Crypto Gifs',
+    description:
+      'Decentralized app which allows users to send Ethereum over the Ropsten Testnet. Records each transaction on the blockchain via a Solidity smart contract!',
+    github: 'https://github.com/irwinmck/crypto-gifs',
+    demo: 'https://crypto-gifs.netlify.app/',
+    tags: ['Solidity', 'React'],
+  },
   rateMyRotation: {
     title: 'Rate My Rotation',
     description:

@@ -93,6 +93,6 @@ export const Row2 = styled.div`
   gap: ${gap};
 
   @media ${breaks.laptop} {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 4fr 4.5fr;
   }
 `;
