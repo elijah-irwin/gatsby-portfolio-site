@@ -1,6 +1,16 @@
 export const projectData = [
   {
     year: 2022,
+    name: 'Spotify Clone',
+    madeAt: '-',
+    builtWith: ['Next', 'Recoil', 'TailwindCSS'],
+    links: {
+      demo: 'https://mak-spotify-clone.vercel.app/',
+      github: 'https://github.com/irwinmck/spotify-clone',
+    },
+  },
+  {
+    year: 2022,
     name: 'Crypto Gifs',
     madeAt: '-',
     builtWith: ['Solidity', 'React', 'TailwindCSS'],
